@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqu0j2hrsrtt2"]
+
+[ext_resource type="Texture2D" uid="uid://b0rxo2lgy31pt" path="res://assets/UI/Box_Blue_Rounded.png" id="1_0px6i"]
+[ext_resource type="FontFile" uid="uid://drirr01l1wrix" path="res://assets/UI/fontes/vinizinho.ttf" id="2_6d1ws"]
+[ext_resource type="PackedScene" uid="uid://brbb4dsnwarqo" path="res://scenes/mission_entry.tscn" id="3_wlu74"]
+
+[node name="MissionStatus" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Panel"]
+layout_mode = 2
+texture = ExtResource("1_0px6i")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(440, 310)
+layout_mode = 2
+
+[node name="MissionSection" type="VBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="LabelMissions" type="Label" parent="Panel/VBoxContainer/MissionSection"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6d1ws")
+theme_override_font_sizes/font_size = 60
+text = "Missions"
+
+[node name="CompletedMissionList" type="VBoxContainer" parent="Panel/VBoxContainer/MissionSection"]
+layout_mode = 2
+
+[node name="MissionEntry" parent="Panel/VBoxContainer/MissionSection/CompletedMissionList" instance=ExtResource("3_wlu74")]
+layout_mode = 2
+
+[node name="MatchSection" type="VBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="MatchStarsContainer" type="HBoxContainer" parent="Panel/VBoxContainer/MatchSection"]
+layout_mode = 2
+
+[node name="LabelMatch" type="Label" parent="Panel/VBoxContainer/MatchSection"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6d1ws")
+theme_override_font_sizes/font_size = 60
+text = "Match
+"
+
+[node name="ProgressSection" type="VBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="LabelProgress" type="Label" parent="Panel/VBoxContainer/ProgressSection"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6d1ws")
+theme_override_font_sizes/font_size = 60
+text = "Progress"
+
+[node name="TaskProgressContainer" type="Control" parent="Panel/VBoxContainer/ProgressSection"]
+layout_mode = 2
+
+[node name="TaskProgressBar" type="ProgressBar" parent="Panel/VBoxContainer/ProgressSection/TaskProgressContainer"]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("2_6d1ws")
+theme_override_font_sizes/font_size = 40

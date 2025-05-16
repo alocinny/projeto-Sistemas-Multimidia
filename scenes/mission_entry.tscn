@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://brbb4dsnwarqo"]
+
+[node name="MissionEntry" type="CheckBox"]
+disabled = true
