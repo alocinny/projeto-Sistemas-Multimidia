@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqu0j2hrsrtt2"]
+
+[ext_resource type="Texture2D" uid="uid://nfr32wjp7ls" path="res://assets/UI/BarV1_ProgressBar.png" id="2_lgmt5"]
+[ext_resource type="Texture2D" uid="uid://cqvwfpokw7qsx" path="res://assets/UI/BarV1_ProgressBarBorder.png" id="2_safx5"]
+
+[node name="MatchStatus" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 309.0
+offset_right = 701.0
+offset_bottom = 334.0
+texture_over = ExtResource("2_safx5")
+texture_progress = ExtResource("2_lgmt5")
