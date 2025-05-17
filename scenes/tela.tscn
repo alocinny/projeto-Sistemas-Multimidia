@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cit5p2kppkdvk"]
+
+[ext_resource type="PackedScene" uid="uid://bb7bgapr0qsus" path="res://scenes/hotbar.tscn" id="1_7ldur"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="hotbar" parent="." instance=ExtResource("1_7ldur")]
+position = Vector2(395, 548)
