@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bb7bgapr0qsus"]
 
-[ext_resource type="Texture2D" uid="uid://cct33yjc75exk" path="res://assets/UI/tile/40 Sem Título_20250517170746.png" id="1_2n1yv"]
-[ext_resource type="Texture2D" uid="uid://dhnmb2q40018" path="res://assets/UI/tile/40 Sem Título_20250517170607.png" id="2_vu8xs"]
-[ext_resource type="Texture2D" uid="uid://drm50kwlcn5j5" path="res://assets/UI/tile/40 Sem Título_20250517170647.png" id="3_uhbbb"]
-[ext_resource type="Texture2D" uid="uid://bc366n4i6fwmr" path="res://assets/UI/tile/40 Sem Título_20250517170731.png" id="4_1ewps"]
+[ext_resource type="Texture2D" uid="uid://cct33yjc75exk" path="res://assets/UI/tile/rosa.png" id="1_2n1yv"]
+[ext_resource type="Texture2D" uid="uid://dhnmb2q40018" path="res://assets/UI/tile/grama.png" id="2_vu8xs"]
+[ext_resource type="Texture2D" uid="uid://drm50kwlcn5j5" path="res://assets/UI/tile/marrom.png" id="3_uhbbb"]
+[ext_resource type="Texture2D" uid="uid://bc366n4i6fwmr" path="res://assets/UI/tile/azul.png" id="4_1ewps"]
 
 [node name="hotbar" type="Node2D"]
 

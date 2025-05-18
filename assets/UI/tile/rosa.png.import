@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cct33yjc75exk"
-path="res://.godot/imported/40 Sem Título_20250517170746.png-ed21526139a37d0ba6f9206118ecee19.ctex"
+path="res://.godot/imported/rosa.png-8a3deac00bf4e28529809572663fcd5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/tile/40 Sem Título_20250517170746.png"
-dest_files=["res://.godot/imported/40 Sem Título_20250517170746.png-ed21526139a37d0ba6f9206118ecee19.ctex"]
+source_file="res://assets/UI/tile/rosa.png"
+dest_files=["res://.godot/imported/rosa.png-8a3deac00bf4e28529809572663fcd5b.ctex"]
 
 [params]
 
