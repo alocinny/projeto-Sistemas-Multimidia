@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://nfr32wjp7ls" path="res://assets/UI/BarV1_ProgressBar.png" id="2_lgmt5"]
 [ext_resource type="Texture2D" uid="uid://cqvwfpokw7qsx" path="res://assets/UI/BarV1_ProgressBarBorder.png" id="2_safx5"]
-[ext_resource type="FontFile" uid="uid://drirr01l1wrix" path="res://assets/UI/fontes/vinizinho.ttf" id="3_lgmt5"]
+[ext_resource type="FontFile" uid="uid://mff1sv3t4rpj" path="res://assets/UI/fontes/Nunito/static/Nunito-SemiBold.ttf" id="3_lgmt5"]
 
 [node name="MatchStatus" type="CanvasLayer"]
 
@@ -14,31 +14,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="matchStatus" type="TextureProgressBar" parent="Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 426.0
-offset_top = 309.0
-offset_right = -452.0
-offset_bottom = -314.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 274.0
+offset_bottom = 40.0
+
+[node name="matchStatus" type="TextureProgressBar" parent="Control/HBoxContainer"]
+layout_mode = 2
 texture_over = ExtResource("2_safx5")
 texture_progress = ExtResource("2_lgmt5")
 
-[node name="Label" type="Label" parent="Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 427.0
-offset_top = 257.0
-offset_right = -449.0
-offset_bottom = -361.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Label" type="Label" parent="Control/HBoxContainer"]
+layout_mode = 2
 theme_override_fonts/font = ExtResource("3_lgmt5")
 theme_override_font_sizes/font_size = 25
 text = "MATCH PROGRESS BAR"

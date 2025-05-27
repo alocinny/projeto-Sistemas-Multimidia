@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dmlak70i7034e"]
 
-[ext_resource type="Script" uid="uid://sqm8c3mfrhc6" path="res://scenes/h_box_container.gd" id="1_icink"]
+[ext_resource type="Script" uid="uid://sqm8c3mfrhc6" path="res://scripts/h_box_container.gd" id="1_icink"]
 [ext_resource type="Texture2D" uid="uid://c42yvug2jypcv" path="res://assets/UI/IconButton_Small_GreyOutline_Rounded.png" id="2_iq1wp"]
 [ext_resource type="Texture2D" uid="uid://ct8yphpbk5eki" path="res://assets/UI/PremadeButtons_Check.png" id="3_hnpba"]
-[ext_resource type="FontFile" uid="uid://drirr01l1wrix" path="res://assets/UI/fontes/vinizinho.ttf" id="4_neyst"]
+[ext_resource type="FontFile" uid="uid://mff1sv3t4rpj" path="res://assets/UI/fontes/Nunito/static/Nunito-SemiBold.ttf" id="4_icink"]
 
 [node name="HBoxContainer" type="HBoxContainer"]
 theme_override_constants/separation = 20
@@ -22,6 +22,6 @@ expand_mode = 2
 
 [node name="Task" type="Label" parent="."]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_neyst")
+theme_override_fonts/font = ExtResource("4_icink")
 theme_override_font_sizes/font_size = 40
-text = "sla vei aq vai a task"
+text = "UHhh God is good "

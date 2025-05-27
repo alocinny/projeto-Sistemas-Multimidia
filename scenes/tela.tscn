@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cit5p2kppkdvk"]
-
-[ext_resource type="PackedScene" uid="uid://x38b3vshxvys" path="res://scenes/canvas_layer.tscn" id="1_7ldur"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="hotbarUI" parent="." instance=ExtResource("1_7ldur")]
