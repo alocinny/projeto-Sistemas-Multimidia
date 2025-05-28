@@ -4,6 +4,7 @@ extends CanvasLayer
 @onready var statusLabel: Label = $Control/HBoxContainer/NinePatchRect/statuslabel
 
 func _ready():
+	# pra testar
 	update_progressBar(60.0)
 
 func update_progressBar(valor: float) -> void:
