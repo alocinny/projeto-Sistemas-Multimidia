@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dypy2h32escpn"]
+[gd_scene load_steps=7 format=3 uid="uid://dypy2h32escpn"]
 
+[ext_resource type="Script" uid="uid://b5h5yhht24f7y" path="res://scripts/matchStatus2.gd" id="1_1sftv"]
 [ext_resource type="Texture2D" uid="uid://82f6gm157yui" path="res://assets/UI/label_bg_brown.png" id="1_by1rb"]
 [ext_resource type="FontFile" uid="uid://oohuaye3fqbj" path="res://assets/UI/fontes/Nunito/static/Nunito-Black.ttf" id="2_1sftv"]
 [ext_resource type="Texture2D" uid="uid://b8nvyd4nqwq84" path="res://assets/UI/bar_under.png" id="3_mgchk"]
@@ -7,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://crffkbh3hufmt" path="res://assets/UI/bar_progress_brown.png" id="5_mgchk"]
 
 [node name="MatchStatus" type="CanvasLayer"]
+script = ExtResource("1_1sftv")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
