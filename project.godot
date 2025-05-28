@@ -17,3 +17,7 @@ config/icon="res://icon.svg"
 [dotnet]
 
 project/assembly_name="projeto-sist-multimidia"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(5.10186e-06, 0.51549, 0.652993, 1)
