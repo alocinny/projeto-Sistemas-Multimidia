@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cf03sl3bkvfws"]
 
+[ext_resource type="FontFile" uid="uid://oohuaye3fqbj" path="res://assets/UI/fontes/Nunito/static/Nunito-Black.ttf" id="1_qon3e"]
 [ext_resource type="PackedScene" uid="uid://dmlak70i7034e" path="res://scenes/TaskCheckboxtscn.tscn" id="2_qon3e"]
-[ext_resource type="FontFile" uid="uid://drirr01l1wrix" path="res://assets/UI/fontes/vinizinho.ttf" id="2_xdlr3"]
 
 [node name="CheckListTask" type="CanvasLayer"]
 
@@ -18,13 +18,14 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -382.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
 
 [node name="Title" type="Label" parent="AllTasks/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_xdlr3")
+theme_override_fonts/font = ExtResource("1_qon3e")
 theme_override_font_sizes/font_size = 60
 text = "TASKS"
 

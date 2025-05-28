@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://clnjpyl7l7cnp"]
+[gd_scene load_steps=15 format=4 uid="uid://clnjpyl7l7cnp"]
 
 [ext_resource type="Texture2D" uid="uid://dyk11awmtrffa" path="res://assets/UI/mapa/mapa_teste.png" id="1_ht66m"]
 [ext_resource type="Texture2D" uid="uid://bc366n4i6fwmr" path="res://assets/UI/tile/azul.png" id="2_k6wio"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cct33yjc75exk" path="res://assets/UI/tile/rosa.png" id="5_tv3wk"]
 [ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/match_status.tscn" id="6_knerb"]
 [ext_resource type="PackedScene" uid="uid://x38b3vshxvys" path="res://scenes/canvas_layer.tscn" id="7_7bjqb"]
+[ext_resource type="PackedScene" uid="uid://dypy2h32escpn" path="res://scenes/tasks_bar.tscn" id="8_7bjqb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4rysj"]
 texture = ExtResource("1_ht66m")
@@ -132,3 +133,5 @@ tile_set = SubResource("TileSet_kohg4")
 [node name="MatchStatus" parent="." instance=ExtResource("6_knerb")]
 
 [node name="hotbarUI" parent="." instance=ExtResource("7_7bjqb")]
+
+[node name="MatchStatus2" parent="." instance=ExtResource("8_7bjqb")]
