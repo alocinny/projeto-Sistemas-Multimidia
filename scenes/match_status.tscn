@@ -30,7 +30,7 @@ offset_bottom = -128.0
 [node name="NinePatchRect" type="NinePatchRect" parent="Control/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("1_fndkg")
-patch_margin_left = 64
+patch_margin_left = 63
 patch_margin_top = 35
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/NinePatchRect"]
@@ -41,12 +41,12 @@ offset_right = 61.0
 offset_bottom = 29.0
 theme_override_fonts/font = ExtResource("2_y0nhs")
 theme_override_font_sizes/font_size = 16
-text = "80 %"
+text = "55 %"
 horizontal_alignment = 1
 
 [node name="matchStatus" type="TextureProgressBar" parent="Control/HBoxContainer"]
 layout_mode = 2
-value = 50.0
+value = 55.0
 texture_under = ExtResource("2_fndkg")
 texture_over = ExtResource("3_y0nhs")
 texture_progress = ExtResource("4_wfl7r")
