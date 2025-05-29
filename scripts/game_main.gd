@@ -1,7 +1,8 @@
 extends Node2D
 
-var tile = preload("res://scenes/GameTile.tscn")
+const  Biome = preload("res://scripts/enums.gd").Biome
 
-func _ready() -> void:
-	var instance = tile.instantiate()
-	add_child(instance)
+@onready var TileGenerator = $TileGenerator
+
+func _ready():
+	TileGenerator.new_tile(Biome.PAMPAS)
