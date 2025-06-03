@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TilesResource" load_steps=3 format=3 uid="uid://dwlkyo6n3nj3e"]
+
+[ext_resource type="Texture2D" uid="uid://dhnmb2q40018" path="res://assets/UI/tile/grama.png" id="1_l8fw0"]
+[ext_resource type="Script" uid="uid://dwfosuhvolcwq" path="res://Resources/Item.gd" id="2_mju0b"]
+
+[resource]
+script = ExtResource("2_mju0b")
+icon = ExtResource("1_l8fw0")
+title = "grama"
+metadata/_custom_type_script = "uid://dwfosuhvolcwq"

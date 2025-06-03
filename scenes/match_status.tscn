@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://dqu0j2hrsrtt2"]
+
+[ext_resource type="Texture2D" uid="uid://c6u3x2exiyvdi" path="res://assets/UI/label_bg2.png" id="1_fndkg"]
+[ext_resource type="Script" path="res://scripts/match_status.gd" id="1_y0nhs"]
+[ext_resource type="Texture2D" uid="uid://b8nvyd4nqwq84" path="res://assets/UI/bar_under.png" id="2_fndkg"]
+[ext_resource type="FontFile" uid="uid://oohuaye3fqbj" path="res://assets/UI/fontes/Nunito/static/Nunito-Black.ttf" id="2_y0nhs"]
+[ext_resource type="Texture2D" uid="uid://ckh3m450r2b7c" path="res://assets/UI/bar_over.png" id="3_y0nhs"]
+[ext_resource type="Texture2D" uid="uid://c3iba1a6vj51c" path="res://assets/UI/bar_progress.png" id="4_wfl7r"]
+
+[node name="MatchStatus" type="CanvasLayer"]
+script = ExtResource("1_y0nhs")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 402.0
+offset_top = 196.0
+offset_right = 1.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = -405.0
+offset_top = -192.0
+offset_right = 11.0
+offset_bottom = -128.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_fndkg")
+patch_margin_left = 63
+patch_margin_top = 35
+
+[node name="statuslabel" type="Label" parent="Control/HBoxContainer/NinePatchRect"]
+layout_mode = 2
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 61.0
+offset_bottom = 29.0
+theme_override_fonts/font = ExtResource("2_y0nhs")
+theme_override_font_sizes/font_size = 16
+text = "55 %"
+horizontal_alignment = 1
+
+[node name="matchStatus" type="TextureProgressBar" parent="Control/HBoxContainer"]
+layout_mode = 2
+texture_under = ExtResource("2_fndkg")
+texture_over = ExtResource("3_y0nhs")
+texture_progress = ExtResource("4_wfl7r")
