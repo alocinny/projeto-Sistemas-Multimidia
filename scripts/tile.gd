@@ -8,6 +8,10 @@ const QUARTER_IMG = SIZE_IMG/4
 const PADDING = 50
 var edges = []
 var elements = [[],[],[],[]]
+
+var is_being_dragged = false
+var mouse_offset = Vector2.ZERO
+
 @onready var base = $Base
 
 func _ready():
@@ -79,3 +83,12 @@ func place_elements(textures, density, edge_index):
 		sprite.z_index = sprite.position.y + HALF_IMG + QUARTER_IMG + 1
 		elements[edge_index].append(sprite)
 		add_child(sprite)
+
+func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if Input.is_action_just_pressed("m1"):
+		is_being_dragged = true
+		mouse_offset = get_local_mouse_position()
+		
+	elif Input.is_action_just_released("m1"):
+		is_being_dragged = false
+		mouse_offset = Vector2.ZERO

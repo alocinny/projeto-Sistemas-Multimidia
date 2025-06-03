@@ -28,3 +28,5 @@ func new_tile(biome):
 	var tile = tile.instantiate()
 	tile.initialize_tile(biome, trees[biome], bushes[biome])
 	add_sibling(tile)
+	
+	return tile

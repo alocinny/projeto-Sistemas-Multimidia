@@ -6,3 +6,10 @@
 script = ExtResource("1_2sjy5")
 
 [node name="Base" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-255, -15, -2, -166, 246, -18, 247, 36, 1, 186, -257, 33)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,8 +1,9 @@
 extends Node2D
 
-const  Biome = preload("res://scripts/enums.gd").Biome
-
+const Biome = preload("res://scripts/enums.gd").Biome
 @onready var TileGenerator = $TileGenerator
 
+var hand_tile
+
 func _ready():
-	TileGenerator.new_tile(Biome.PAMPAS)
+	hand_tile = TileGenerator.new_tile(Biome.PAMPAS)
