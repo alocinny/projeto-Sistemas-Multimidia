@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=3 uid="uid://dqu0j2hrsrtt2"]
+
+[ext_resource type="Texture2D" uid="uid://dpjx4pvg4ui70" path="res://assets/UI/Icon_Small_Star.png" id="1_dcf7e"]
+[ext_resource type="Script" uid="uid://brbsnkxgjllcy" path="res://scripts/mission_status.gd" id="1_npcvv"]
+[ext_resource type="Script" uid="uid://dld61v2vflspn" path="res://scripts/completed_mission_list.gd" id="1_slmue"]
+[ext_resource type="Script" uid="uid://cn5cpoa4h60fw" path="res://scripts/match_stars_container.gd" id="3_vl2eb"]
+[ext_resource type="PackedScene" uid="uid://brbb4dsnwarqo" path="res://scenes/mission_entry.tscn" id="3_wlu74"]
+[ext_resource type="Texture2D" uid="uid://b5e6j4y2hinm6" path="res://assets/UI/Icon_Small_StarGrey.png" id="5_wlu74"]
+[ext_resource type="Script" uid="uid://crjr03lre2qaf" path="res://scripts/task_porgress_container.gd" id="6_sypux"]
+
+[node name="MissionStatus" type="Control"]
+layout_mode = 3
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1152.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("1_npcvv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(400, 648)
+layout_mode = 0
+offset_right = 299.0
+offset_bottom = 139.0
+
+[node name="MissionSection" type="VBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 216)
+layout_mode = 2
+
+[node name="CompletedMissionList" type="VBoxContainer" parent="VBoxContainer/MissionSection"]
+layout_mode = 2
+script = ExtResource("1_slmue")
+
+[node name="MissionEntry" parent="VBoxContainer/MissionSection/CompletedMissionList" instance=ExtResource("3_wlu74")]
+layout_mode = 2
+
+[node name="LabelMissions" type="Label" parent="VBoxContainer/MissionSection"]
+layout_mode = 2
+text = "Missions"
+
+[node name="MatchSection" type="VBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 216)
+layout_mode = 2
+
+[node name="MatchStarsContainer" type="HBoxContainer" parent="VBoxContainer/MatchSection"]
+layout_mode = 2
+script = ExtResource("3_vl2eb")
+Icon_Small_Star = ExtResource("1_dcf7e")
+Icon_Small_StarGrey = ExtResource("5_wlu74")
+
+[node name="LabelMatch" type="Label" parent="VBoxContainer/MatchSection"]
+layout_mode = 2
+text = "Match
+"
+
+[node name="ProgressSection" type="VBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 216)
+layout_mode = 2
+
+[node name="LabelProgress" type="Label" parent="VBoxContainer/ProgressSection"]
+layout_mode = 2
+text = "Progress"
+
+[node name="TaskProgressContainer" type="Control" parent="VBoxContainer/ProgressSection"]
+layout_mode = 2
+script = ExtResource("6_sypux")
+
+[node name="TaskProgressBar" type="ProgressBar" parent="VBoxContainer/ProgressSection/TaskProgressContainer"]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
