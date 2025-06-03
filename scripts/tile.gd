@@ -2,20 +2,16 @@ extends Node2D
 
 const Biome = preload("res://scripts/enums.gd").Biome
 const EdgeType = preload("res://scripts/enums.gd").EdgeType
-const SIZE_IMG = 512
+const SIZE_IMG = GameState.TILE_SIZE
 const HALF_IMG = SIZE_IMG/2
 const QUARTER_IMG = SIZE_IMG/4
 const PADDING = 50
+
 var edges = []
 var elements = [[],[],[],[]]
-
+var anchor_position
 var is_being_dragged = false
 var mouse_offset = Vector2.ZERO
-
-@onready var base = $Base
-
-func _ready():
-	base.texture = preload("res://Assets/elementos/pampas/solo-gramado-completo512.png")
 
 func initialize_tile(biome, trees, bushes):
 	var tree_prob
@@ -40,8 +36,6 @@ func initialize_tile(biome, trees, bushes):
 			edges.append(EdgeType.BUSH)
 			place_elements(bushes, randi_range(0, bush_density), i)
 			
-	print("edges: ", edges)
-	print("bushes: ", bushes.size())
 
 func place_elements(textures, density, edge_index):
 	var a # esquerda ou direita do eixo y
@@ -80,15 +74,17 @@ func place_elements(textures, density, edge_index):
 		var sprite = Sprite2D.new()
 		sprite.texture = textures[randi_range(0, textures.size() - 1)]
 		sprite.position = Vector2(x, y - HALF_IMG + 12)
-		sprite.z_index = sprite.position.y + HALF_IMG + QUARTER_IMG + 1
+		#sprite.z_index = sprite.position.y + HALF_IMG + QUARTER_IMG + 1
 		elements[edge_index].append(sprite)
-		add_child(sprite)
+		$Elements.add_child(sprite)
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if Input.is_action_just_pressed("m1"):
+		GameState.current_state = GameState.GameState.DRAGGING
 		is_being_dragged = true
 		mouse_offset = get_local_mouse_position()
 		
 	elif Input.is_action_just_released("m1"):
+		GameState.current_state = GameState.GameState.STOPPED_DRAG
 		is_being_dragged = false
 		mouse_offset = Vector2.ZERO

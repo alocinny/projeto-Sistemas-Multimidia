@@ -24,9 +24,10 @@ var bushes = {
 	]
 }
 
-func new_tile(biome):
+func new_tile(biome, pos):
 	var tile = tile.instantiate()
+	tile.position = pos
+	tile.anchor_position = pos
 	tile.initialize_tile(biome, trees[biome], bushes[biome])
-	add_sibling(tile)
 	
 	return tile
