@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dkfma1aabju1w"]
+[gd_scene load_steps=9 format=3 uid="uid://dkfma1aabju1w"]
 
-[ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_lv0kf"]
-[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_2fvig"]
+[ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_5pnh1"]
+[ext_resource type="Script" uid="uid://yjffqlqkjq27" path="res://scripts/menuCerrado.gd" id="1_ktnwa"]
+[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_ktnwa"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1vsb4"]
-texture = ExtResource("1_lv0kf")
+texture = ExtResource("1_5pnh1")
 modulate_color = Color(0.505344, 0.505344, 0.505344, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lv0kf"]
@@ -43,6 +44,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ktnwa")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -54,6 +56,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_1vsb4")
 
 [node name="Button" type="Button" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -113,7 +116,7 @@ theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_2fvig")
+theme_override_fonts/font = ExtResource("2_ktnwa")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_lv0kf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3oxey")
@@ -136,6 +139,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 10
-theme_override_fonts/font = ExtResource("2_2fvig")
+theme_override_fonts/font = ExtResource("2_ktnwa")
 theme_override_font_sizes/font_size = 120
 text = "Cerrado"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

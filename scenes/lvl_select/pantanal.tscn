@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://c2t0xfd2t7mbm"]
+[gd_scene load_steps=9 format=3 uid="uid://c2t0xfd2t7mbm"]
 
+[ext_resource type="Script" uid="uid://c74jxe6fyxkhm" path="res://scripts/menuPantanal.gd" id="1_22hsl"]
 [ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_qykrm"]
 [ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_ny70c"]
 
@@ -43,6 +44,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_22hsl")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -139,3 +141,6 @@ theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("2_ny70c")
 theme_override_font_sizes/font_size = 120
 text = "Pantanal"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

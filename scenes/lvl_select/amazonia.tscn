@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cvlmvdrtw5mpi"]
+[gd_scene load_steps=9 format=3 uid="uid://cvlmvdrtw5mpi"]
 
 [ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_o3dbl"]
+[ext_resource type="Script" uid="uid://di0h05lqi5rff" path="res://scripts/menuAmazonia.gd" id="1_uyiib"]
 [ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_87ax6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mqx0w"]
@@ -43,6 +44,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uyiib")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -139,3 +141,6 @@ theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("2_87ax6")
 theme_override_font_sizes/font_size = 120
 text = "Amazônia"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
