@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://b48h0e2epvc"]
 
-[ext_resource type="Script" uid="uid://dckptpfdxpqcp" path="res://menu.gd" id="1_mae5d"]
+[ext_resource type="Script" uid="uid://dckptpfdxpqcp" path="res://scripts/menu.gd" id="1_mae5d"]
 [ext_resource type="Texture2D" uid="uid://nvxfocnphbs" path="res://imagensMenu/environment_forestbackground.png" id="1_ouk20"]
 [ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_mae5d"]
 

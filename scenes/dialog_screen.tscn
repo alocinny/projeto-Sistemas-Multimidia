@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://mk846xbt4vpf"]
 
-[ext_resource type="Texture2D" uid="uid://bxdpt7m8fih2y" path="res://imagensNPC/ddb55c3bee30478a8285c1b4bc7f06ebJFioUK5wMbS9OC4g-0.png" id="1_dglj2"]
-[ext_resource type="Script" uid="uid://dbt516tckec7q" path="res://dialog_screen.gd" id="1_y1cjy"]
-[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_y1cjy"]
+[ext_resource type="Script" uid="uid://dbt516tckec7q" path="res://scripts/dialog_screen.gd" id="1_t2e62"]
+[ext_resource type="Texture2D" uid="uid://bxdpt7m8fih2y" path="res://imagensNPC/ddb55c3bee30478a8285c1b4bc7f06ebJFioUK5wMbS9OC4g-0.png" id="2_8ryl4"]
+[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="3_8kmho"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_32udp"]
 line_spacing = 0.0
-font = ExtResource("2_y1cjy")
+font = ExtResource("3_8kmho")
 shadow_color = Color(0, 0, 0, 0.6)
 
 [node name="DialogScreen" type="Control" node_paths=PackedStringArray("_name", "_dialog", "_faceset")]
@@ -23,7 +23,7 @@ offset_right = 160.0
 offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 0
-script = ExtResource("1_y1cjy")
+script = ExtResource("1_t2e62")
 _name = NodePath("Background/HContainer/VContainer/Name")
 _dialog = NodePath("Background/HContainer/VContainer/Dialog")
 _faceset = NodePath("Background/HContainer/Border/Faceset")
@@ -70,7 +70,7 @@ offset_right = 35.0
 offset_bottom = 36.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_dglj2")
+texture = ExtResource("2_8ryl4")
 expand_mode = 1
 stretch_mode = 5
 
@@ -91,5 +91,5 @@ size_flags_vertical = 3
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 0
 theme_override_constants/shadow_offset_x = 0
-theme_override_fonts/normal_font = ExtResource("2_y1cjy")
+theme_override_fonts/normal_font = ExtResource("3_8kmho")
 text = "ola meu nome "
