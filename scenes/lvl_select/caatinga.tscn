@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bk11sgro8qerk"]
+[gd_scene load_steps=9 format=3 uid="uid://bk11sgro8qerk"]
 
 [ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_1n14j"]
+[ext_resource type="Script" uid="uid://b4xidi5q5bg5e" path="res://scripts/menuCaatinga.gd" id="1_t7wnj"]
 [ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_1agwy"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mqx0w"]
@@ -43,6 +44,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_t7wnj")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -96,6 +98,31 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_tregq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_trse2")
 text = "<"
 
+[node name="Button4" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -203.0
+offset_right = 104.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_1agwy")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b4hu4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vg1ap")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tregq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_trse2")
+text = "Jogar"
+
 [node name="Button3" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
@@ -119,7 +146,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_b4hu4")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vg1ap")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_tregq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_trse2")
-text = "Jogar"
+text = "menu"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -139,3 +166,6 @@ theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("2_1agwy")
 theme_override_font_sizes/font_size = 120
 text = "Caatinga"
+
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
