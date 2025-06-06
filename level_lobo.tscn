@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://clg77k8o1iw1a"]
+
+[ext_resource type="Script" uid="uid://bsfj2nrk1yewf" path="res://level_lobo.gd" id="1_7at6m"]
+
+[node name="Level_lobo" type="Node2D"]
+script = ExtResource("1_7at6m")
+
+[node name="HUD" type="CanvasLayer" parent="."]

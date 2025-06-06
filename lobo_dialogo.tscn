@@ -1,15 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://mk846xbt4vpf"]
+[gd_scene load_steps=5 format=3 uid="uid://dh5xs8p3t0m7q"]
 
-[ext_resource type="Script" uid="uid://dbt516tckec7q" path="res://dialog_screen.gd" id="1_y1cjy"]
-[ext_resource type="Texture2D" uid="uid://bdvjxb0v4qcfj" path="res://imagensNPC/arara_azul.webp" id="2_32udp"]
-[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_y1cjy"]
+[ext_resource type="Script" uid="uid://dhou1heeg2x05" path="res://lobo_dialogo.gd" id="1_f2os7"]
+[ext_resource type="Texture2D" uid="uid://bemga3eyp1hvb" path="res://imagensNPC/wolf-head-in-pixel-art-style-vector.jpg" id="2_sbw5n"]
+[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="3_g74yi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_32udp"]
 line_spacing = 0.0
-font = ExtResource("2_y1cjy")
+font = ExtResource("3_g74yi")
 shadow_color = Color(0, 0, 0, 0.6)
 
-[node name="Lobo_dialogo" type="Control" node_paths=PackedStringArray("_name", "_dialog", "_faceset")]
+[node name="Lobo_dialogo" type="Control"]
 custom_minimum_size = Vector2(320, 80)
 layout_mode = 3
 anchors_preset = 7
@@ -23,10 +23,7 @@ offset_right = 160.0
 offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 0
-script = ExtResource("1_y1cjy")
-_name = NodePath("Background/HContainer/VContainer/Name")
-_dialog = NodePath("Background/HContainer/VContainer/Dialog")
-_faceset = NodePath("Background/HContainer/Border/Faceset")
+script = ExtResource("1_f2os7")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -70,7 +67,7 @@ offset_right = 35.0
 offset_bottom = 36.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_32udp")
+texture = ExtResource("2_sbw5n")
 expand_mode = 1
 stretch_mode = 5
 
@@ -80,7 +77,7 @@ size_flags_horizontal = 3
 
 [node name="Name" type="Label" parent="Background/HContainer/VContainer"]
 layout_mode = 2
-text = "Arara-azul"
+text = "Lobo-Guará"
 label_settings = SubResource("LabelSettings_32udp")
 horizontal_alignment = 2
 vertical_alignment = 1
@@ -91,5 +88,5 @@ size_flags_vertical = 3
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 0
 theme_override_constants/shadow_offset_x = 0
-theme_override_fonts/normal_font = ExtResource("2_y1cjy")
+theme_override_fonts/normal_font = ExtResource("3_g74yi")
 text = "ola meu nome "
