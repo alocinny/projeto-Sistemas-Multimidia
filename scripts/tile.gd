@@ -3,13 +3,15 @@ extends Node2D
 const Biome = preload("res://scripts/enums.gd").Biome
 const EdgeType = preload("res://scripts/enums.gd").EdgeType
 const SIZE_IMG = GameState.TILE_SIZE
-const HALF_IMG = SIZE_IMG/2
-const QUARTER_IMG = SIZE_IMG/4
+@warning_ignore("integer_division") const HALF_IMG = SIZE_IMG/2
+@warning_ignore("integer_division") const QUARTER_IMG = SIZE_IMG/4
 const PADDING = 50
 
 var edges = []
 var elements = [[],[],[],[]]
 var anchor_position
+var hand_position
+var has_moved = false
 var is_being_dragged = false
 var mouse_offset = Vector2.ZERO
 
@@ -78,13 +80,14 @@ func place_elements(textures, density, edge_index):
 		elements[edge_index].append(sprite)
 		$Elements.add_child(sprite)
 
-func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-	if Input.is_action_just_pressed("m1"):
-		GameState.current_state = GameState.GameState.DRAGGING
-		is_being_dragged = true
-		mouse_offset = get_local_mouse_position()
-		
-	elif Input.is_action_just_released("m1"):
+func _on_area_2d_input_event(_viewport: Node, _event: InputEvent, _shape_idx: int) -> void:
+	if !has_moved:
+		if Input.is_action_just_pressed("m1"):
+			GameState.current_state = GameState.GameState.DRAGGING
+			is_being_dragged = true
+			mouse_offset = get_local_mouse_position()
+			
+	if Input.is_action_just_released("m1"):
 		GameState.current_state = GameState.GameState.STOPPED_DRAG
 		is_being_dragged = false
 		mouse_offset = Vector2.ZERO

@@ -1,6 +1,6 @@
 extends Node2D
 const  Biome = preload("res://scripts/enums.gd").Biome
-const tile = preload("res://scenes/Tile.tscn")
+const tile = preload("res://scenes/core_gameplay/Tile.tscn")
 
 var trees = {
 	Biome.PAMPAS: [
@@ -27,6 +27,7 @@ var bushes = {
 func new_tile(biome, pos):
 	var tile = tile.instantiate()
 	tile.position = pos
+	tile.hand_position = pos
 	tile.anchor_position = pos
 	tile.initialize_tile(biome, trees[biome], bushes[biome])
 	

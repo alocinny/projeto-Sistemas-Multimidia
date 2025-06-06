@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://f02bjf57iq42"]
 
-[ext_resource type="Script" path="res://scripts/tile.gd" id="1_2sjy5"]
-[ext_resource type="Texture2D" uid="uid://g2bgqs77kecr" path="res://Assets/elementos/pampas/solo-gramado-completo512.png" id="3_r3gf4"]
+[ext_resource type="Script" uid="uid://dx7syrne08uqp" path="res://scripts/tile.gd" id="1_1ey4f"]
+[ext_resource type="Texture2D" uid="uid://g2bgqs77kecr" path="res://Assets/elementos/pampas/solo-gramado-completo512.png" id="2_chjqp"]
 
 [node name="Tile" type="Node2D"]
 y_sort_enabled = true
-script = ExtResource("1_2sjy5")
+script = ExtResource("1_1ey4f")
 
 [node name="Base" type="Sprite2D" parent="."]
-texture = ExtResource("3_r3gf4")
+texture = ExtResource("2_chjqp")
 
 [node name="Elements" type="Node2D" parent="."]
 
