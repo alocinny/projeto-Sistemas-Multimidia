@@ -1,10 +1,13 @@
 extends Node
 
 @onready var controlador_progresso = $progressbar_missoes
+@onready var level_missions = $LevelMissions
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$LevelMissions.progress_updated.connect(_on_level_missions_progress_updated)
+	level_missions.mission_state_changed.connect(controlador_progresso.update_mission_status)
+	controlador_progresso.create_checklist(level_missions.missions)
 	
 	var total_inicial = $LevelMissions.missions.size()
 	_on_level_missions_progress_updated(0, total_inicial)
