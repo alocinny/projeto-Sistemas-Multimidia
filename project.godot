@@ -24,6 +24,9 @@ GameState="*res://scripts/game_state.gd"
 
 directories/dch_directory={}
 directories/dtl_directory={}
+glossary/default_case_sensitive=true
+layout/style_list=[]
+layout/default_style="Default"
 
 [display]
 
