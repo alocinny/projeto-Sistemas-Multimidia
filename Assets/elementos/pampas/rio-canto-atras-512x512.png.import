@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8uv2k6esgs0e"
-path="res://.godot/imported/placeholder-left.png-b9cde960d91c0d52ad083b512188733b.ctex"
+uid="uid://cc531ocwxbpa"
+path="res://.godot/imported/rio-canto-atras-512x512.png-f6da7015c124126dea3323781686a1c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/elementos/placeholders/placeholder-left.png"
-dest_files=["res://.godot/imported/placeholder-left.png-b9cde960d91c0d52ad083b512188733b.ctex"]
+source_file="res://Assets/elementos/pampas/rio-canto-atras-512x512.png"
+dest_files=["res://.godot/imported/rio-canto-atras-512x512.png-f6da7015c124126dea3323781686a1c2.ctex"]
 
 [params]
 
