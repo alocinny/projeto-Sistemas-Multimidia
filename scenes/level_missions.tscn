@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cibkyycidl51"]
+
+[ext_resource type="Script" uid="uid://pcveiax3js1x" path="res://scripts/level_missions.gd" id="1_ktdij"]
+
+[node name="LevelMissions" type="Node"]
+script = ExtResource("1_ktdij")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://cy6du3d22hixt"]
+
+[ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="1_750fd"]
+
+[resource]
+script = ExtResource("1_750fd")
+description = "Adicione pelo menos 2 peças de árvores frutiferas"
+event_type = "Arvores_frutiferas"
+target_count = 3
+metadata/_custom_type_script = "uid://t13aiph8r3xx"
