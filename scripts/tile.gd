@@ -15,29 +15,29 @@ var has_moved = false
 var is_being_dragged = false
 var mouse_offset = Vector2.ZERO
 
-func initialize_tile(biome, trees, bushes):
+func initialize_tile(biome, trees, bushes, given_edges, river):
 	var tree_prob
 	var tree_density
 	var bush_density
 	
+	if river:
+		place_river(river)
+	
 	match biome:
 		Biome.PAMPAS: 
-			tree_prob = 0.50
 			tree_density = 1
 			bush_density = 2
 		Biome.CAATINGA: 
-			tree_prob = 0.10
 			tree_density = 1
 			bush_density = 1
 		
 	for i in 4:	
-		if randf() < tree_prob:
-			edges.append(EdgeType.TREE)
+		if given_edges[i] == EdgeType.TREE:
 			place_elements(trees, tree_density, i)
-		else: 
-			edges.append(EdgeType.BUSH)
+		elif given_edges[i] == EdgeType.BUSH: 
 			place_elements(bushes, randi_range(0, bush_density), i)
 			
+	edges = given_edges
 
 func place_elements(textures, density, edge_index):
 	var a # esquerda ou direita do eixo y
@@ -79,6 +79,13 @@ func place_elements(textures, density, edge_index):
 		#sprite.z_index = sprite.position.y + HALF_IMG + QUARTER_IMG + 1
 		elements[edge_index].append(sprite)
 		$Elements.add_child(sprite)
+		
+
+func place_river(river):
+	var sprite = Sprite2D.new()
+	sprite.texture = river
+	sprite.position = Vector2.ZERO
+	$River.add_child(sprite)
 
 func _on_area_2d_input_event(_viewport: Node, _event: InputEvent, _shape_idx: int) -> void:
 	if !has_moved:

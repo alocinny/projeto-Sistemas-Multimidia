@@ -10,6 +10,8 @@ script = ExtResource("1_1ey4f")
 [node name="Base" type="Sprite2D" parent="."]
 texture = ExtResource("2_chjqp")
 
+[node name="River" type="Sprite2D" parent="."]
+
 [node name="Elements" type="Node2D" parent="."]
 
 [node name="Area2D" type="Area2D" parent="."]
