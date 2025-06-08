@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bsfj2nrk1yewf" path="res://level_lobo.gd" id="1_7at6m"]
 
-[node name="Level_lobo" type="Node2D"]
+[node name="Level_lobo" type="Node2D" node_paths=PackedStringArray("_hud")]
 script = ExtResource("1_7at6m")
+_hud = NodePath("HUD")
 
 [node name="HUD" type="CanvasLayer" parent="."]

@@ -9,7 +9,7 @@ line_spacing = 0.0
 font = ExtResource("2_y1cjy")
 shadow_color = Color(0, 0, 0, 0.6)
 
-[node name="Lobo_dialogo" type="Control" node_paths=PackedStringArray("_name", "_dialog", "_faceset")]
+[node name="Dialog_screen" type="Control" node_paths=PackedStringArray("_name", "_dialog", "_faceset")]
 custom_minimum_size = Vector2(320, 80)
 layout_mode = 3
 anchors_preset = 7
