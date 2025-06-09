@@ -7,10 +7,12 @@ signal hand_tile_removed(hand_pos)
 @onready var camera = get_node("../Camera2D")
 var preview_tile
 var closest_anchor
+var closest_distance
 
 func _process(_delta):
 	var moved_tile = null
 	var vacant_hand_pos = null
+	closest_distance = INF
 	
 	for child in camera.get_children():
 		var hand_pos = int(child.name)
@@ -20,6 +22,8 @@ func _process(_delta):
 		
 		if tile.is_being_dragged:
 			if GameState.current_state == GameState.GameState.STARTED_DRAG:
+				tile_grid.update_vacant()
+				tile_grid.vacant_spots["hand"] = child.global_position
 				create_preview(tile)
 				GameState.current_state = GameState.GameState.DRAGGING
 			
@@ -30,10 +34,13 @@ func _process(_delta):
 			var changed_anchor = false
 			for key in tile_grid.vacant_spots:
 				var pos = tile_grid.vacant_spots[key] 
-				if pos.distance_to(mouse_pos) < tile.anchor_position.distance_to(mouse_pos):
-					changed_anchor = true
-					closest_anchor = pos
+				var dist = pos.distance_to(mouse_pos)
 					
+				if dist < closest_distance:
+					changed_anchor = true
+					closest_distance = dist
+					closest_anchor = pos
+
 				tile.anchor_position = closest_anchor
 			
 			if changed_anchor:
