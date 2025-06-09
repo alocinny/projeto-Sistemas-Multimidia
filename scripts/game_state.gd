@@ -2,6 +2,7 @@ extends Node
 
 enum GameState {
 	WAITING_INPUT,
+	STARTED_DRAG,
 	DRAGGING,
 	STOPPED_DRAG
 }
