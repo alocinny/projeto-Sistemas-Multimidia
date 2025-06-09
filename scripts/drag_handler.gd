@@ -22,18 +22,22 @@ func _process(_delta):
 		
 		if tile.is_being_dragged:
 			if GameState.current_state == GameState.GameState.STARTED_DRAG:
+				GameState.dragged_tile = tile
 				tile_grid.update_vacant()
 				tile_grid.vacant_spots["hand"] = child.global_position
 				create_preview(tile)
 				GameState.current_state = GameState.GameState.DRAGGING
 			
-			GameState.dragged_tile = tile
 			var mouse_pos = get_global_mouse_position() 
 			tile.position = mouse_pos - tile.mouse_offset
 			
 			var changed_anchor = false
 			for key in tile_grid.vacant_spots:
 				var pos = tile_grid.vacant_spots[key] 
+				
+				if pos is String:
+					continue
+				
 				var dist = pos.distance_to(mouse_pos)
 					
 				if dist < closest_distance:
