@@ -90,7 +90,7 @@ func place_river(river):
 func _on_area_2d_input_event(_viewport: Node, _event: InputEvent, _shape_idx: int) -> void:
 	if !has_moved:
 		if Input.is_action_just_pressed("m1"):
-			GameState.current_state = GameState.GameState.DRAGGING
+			GameState.current_state = GameState.GameState.STARTED_DRAG
 			is_being_dragged = true
 			mouse_offset = get_local_mouse_position()
 			
