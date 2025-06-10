@@ -35,7 +35,7 @@ func _process(_delta):
 			for key in tile_grid.vacant_spots:
 				var pos = tile_grid.vacant_spots[key] 
 				
-				if pos is String:
+				if tile_grid.forbidden_spots.has(key):
 					continue
 				
 				var dist = pos.distance_to(mouse_pos)

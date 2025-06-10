@@ -4,12 +4,15 @@ const EdgeType = preload("res://scripts/enums.gd").EdgeType
 const TILE_SIZE = GameState.TILE_SIZE
 var tiles = {} #dictionary<Vector2i, Tile>
 var vacant_spots = {} #dictionary<Vector2i, Vector2> coordenadas relativas e globais dos espacos vazios
+var forbidden_spots = {}
+
 var direction = {
 	Vector2i.UP: 1,
 	Vector2i.RIGHT: 2,
 	Vector2i.DOWN: 3,
 	Vector2i.LEFT: 0,	
 }
+
 var opposite_direction = {
 	Vector2i.UP: 3,
 	Vector2i.RIGHT: 0,
@@ -26,17 +29,18 @@ func place_tile(pos, tile):
 	
 func update_vacant():
 	vacant_spots.clear()
+	forbidden_spots.clear()
 	
 	if tiles:
 		for pos in tiles.keys():
 			for dir in [Vector2i.UP, Vector2i.DOWN, Vector2i.LEFT, Vector2i.RIGHT]:
 				var neighbor = pos + dir
+				
 				if not tiles.has(neighbor):
 					vacant_spots[neighbor] = grid_to_global_coords(neighbor)
-						
-					if GameState.dragged_tile and !can_place_tile(dir, tiles[pos]):
-						vacant_spots[neighbor] = "banana"
 					
+				if GameState.dragged_tile and !can_place_tile(dir, tiles[pos]):
+					forbidden_spots[neighbor] = grid_to_global_coords(neighbor)
 	else:
 		vacant_spots[Vector2i(0, 0)] = Vector2(0, 0)
 	
