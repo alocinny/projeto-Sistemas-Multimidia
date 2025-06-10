@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dxim5chuhkrno"
-path="res://.godot/imported/Arimo-Italic-VariableFont_wght.ttf-288767d9b94148b813d2b4cd59fc2075.fontdata"
+path="res://.godot/imported/Arimo-Italic-VariableFont_wght.ttf-6b9a7356eb626234c3ba2fd9e3d94abb.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Arimo/Arimo-Italic-VariableFont_wght.ttf"
-dest_files=["res://.godot/imported/Arimo-Italic-VariableFont_wght.ttf-288767d9b94148b813d2b4cd59fc2075.fontdata"]
+source_file="res://Assets/UI/fontes/Arimo/Arimo-Italic-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/Arimo-Italic-VariableFont_wght.ttf-6b9a7356eb626234c3ba2fd9e3d94abb.fontdata"]
 
 [params]
 

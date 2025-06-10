@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://camoc4hj7krrq"
-path="res://.godot/imported/NotoSans_SemiCondensed-Regular.ttf-5c5b8e1bf9709af553c5adae9ca3ad6a.fontdata"
+path="res://.godot/imported/NotoSans_SemiCondensed-Regular.ttf-34959efe783bf849c849e62530e4c376.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Noto_Sans/static/NotoSans_SemiCondensed-Regular.ttf"
-dest_files=["res://.godot/imported/NotoSans_SemiCondensed-Regular.ttf-5c5b8e1bf9709af553c5adae9ca3ad6a.fontdata"]
+source_file="res://Assets/UI/fontes/Noto_Sans/static/NotoSans_SemiCondensed-Regular.ttf"
+dest_files=["res://.godot/imported/NotoSans_SemiCondensed-Regular.ttf-34959efe783bf849c849e62530e4c376.fontdata"]
 
 [params]
 
