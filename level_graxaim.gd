@@ -1,7 +1,7 @@
 extends Node2D
 class_name Level_Graxaim
 
-const _DIALOG_SCREEN: PackedScene = preload("res://graxaim_dialogo.tscn")
+const _DIALOG_SCREEN: PackedScene = preload("res://dialog_screen.tscn")
 
 var _dialog_pampa: Dictionary = {
 	0: {
