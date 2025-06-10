@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://gm85re8257q3"]
 
-[ext_resource type="Script" uid="uid://dbt516tckec7q" path="res://dialog_screen.gd" id="1_y1cjy"]
+[ext_resource type="Script" uid="uid://dbt516tckec7q" path="res://scripts/dialog_screen.gd" id="1_y1cjy"]
 [ext_resource type="Texture2D" uid="uid://bdvjxb0v4qcfj" path="res://imagensNPC/arara_azul.webp" id="2_32udp"]
 [ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_y1cjy"]
 

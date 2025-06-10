@@ -1,5 +1,5 @@
 extends Node2D
-class_name Level
+class_name Level_ararinha
 
 const _DIALOG_SCREEN: PackedScene = preload("res://scenes/dialog_screen.tscn")
 

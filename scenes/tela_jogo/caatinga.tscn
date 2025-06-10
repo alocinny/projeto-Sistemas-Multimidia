@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://d1hg70rtipj1q"]
+[gd_scene load_steps=9 format=3 uid="uid://d1hg70rtipj1q"]
 
-[ext_resource type="PackedScene" path="res://scenes/level_missions.tscn" id="1_a46qn"]
+[ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_a46qn"]
+[ext_resource type="Script" uid="uid://cje6h45n0aobd" path="res://scripts/tela_jogo_scripts/caatinga.gd" id="1_syiim"]
 [ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="2_syiim"]
 [ext_resource type="Resource" uid="uid://r564tp5o8m8l" path="res://Resources/missoes_caatinga/caatinga_arborea.tres" id="3_3mrg7"]
 [ext_resource type="Resource" uid="uid://x20unxo0j7i5" path="res://Resources/missoes_caatinga/caatinga_arbustiva.tres" id="4_kluml"]
@@ -9,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_my2wx"]
 
 [node name="Caatinga" type="Node2D"]
+script = ExtResource("1_syiim")
 
 [node name="LevelMissions" parent="." instance=ExtResource("1_a46qn")]
 missions = Array[ExtResource("2_syiim")]([ExtResource("3_3mrg7"), ExtResource("4_kluml"), ExtResource("5_wao8u")])

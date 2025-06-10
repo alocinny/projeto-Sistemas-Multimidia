@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bpcmjklxbqao6"]
+[gd_scene load_steps=9 format=3 uid="uid://bpcmjklxbqao6"]
 
-[ext_resource type="PackedScene" path="res://scenes/level_missions.tscn" id="1_brwk3"]
+[ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_brwk3"]
+[ext_resource type="Script" uid="uid://7forkhnmbqy5" path="res://scripts/tela_jogo_scripts/cerrado.gd" id="1_nodpn"]
 [ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="2_nodpn"]
 [ext_resource type="Resource" uid="uid://cy6du3d22hixt" path="res://Resources/missoes_cerrado/Arvores_frutiferas.tres" id="3_7vt0m"]
 [ext_resource type="Resource" uid="uid://dokx6ijaby4qu" path="res://Resources/missoes_cerrado/fontes_de_agua.tres" id="4_m2ohc"]
@@ -9,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_q61hs"]
 
 [node name="Cerrado" type="Node2D"]
+script = ExtResource("1_nodpn")
 
 [node name="LevelMissions" parent="." instance=ExtResource("1_brwk3")]
 missions = Array[ExtResource("2_nodpn")]([ExtResource("3_7vt0m"), ExtResource("4_m2ohc"), ExtResource("5_dv37q")])

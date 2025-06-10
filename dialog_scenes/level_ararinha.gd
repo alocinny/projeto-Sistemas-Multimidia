@@ -1,7 +1,7 @@
 extends Node2D
 class_name Level_Ararinha
 
-const _DIALOG_SCREEN: PackedScene = preload("res://dialog_screen.tscn")
+const _DIALOG_SCREEN: PackedScene = preload("res://dialog_scenes/dialog_screen.tscn")
 
 var _dialog_caatinga: Dictionary = {
 	0: {

@@ -1,5 +1,4 @@
 extends Control
-class_name DialogScreen
 
 var _step: float = 0.05
 
