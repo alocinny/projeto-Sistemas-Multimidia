@@ -1,5 +1,6 @@
 extends Node
 
+@onready var controlador_dialogo = $Level_arara
 @onready var controlador_progresso = $progressbar_missoes
 @onready var level_missions = $LevelMissions
 

@@ -56,8 +56,7 @@ var _dialog_caatinga: Dictionary = {
 @export_category("Objects")
 @export var _hud: CanvasLayer = null
 
-func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("ui_select"):
-		var _new_dialog = _DIALOG_SCREEN.instantiate()
-		_new_dialog.data = _dialog_caatinga
-		_hud.add_child(_new_dialog)
+func _ready() -> void:
+	var _new_dialog = _DIALOG_SCREEN.instantiate()
+	_new_dialog.data = _dialog_caatinga
+	_hud.add_child(_new_dialog)

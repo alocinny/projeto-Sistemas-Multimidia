@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b3snknytalpkl" path="res://scripts/level.gd" id="1_u52ul"]
 
 [node name="Level" type="Node2D" node_paths=PackedStringArray("_hud")]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_u52ul")
 _hud = NodePath("HUD")
 

@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhf4ylo6v2t3e"]
+[gd_scene load_steps=10 format=3 uid="uid://dhf4ylo6v2t3e"]
 
 [ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_hh5a0"]
 [ext_resource type="Script" uid="uid://bvjbcbj3jwaj3" path="res://scripts/tela_jogo_scripts/mata_atlantica.gd" id="1_tl3xg"]
+[ext_resource type="PackedScene" uid="uid://b87k21wrdakjd" path="res://dialog_scenes/level_mico.tscn" id="2_gxyob"]
 [ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="2_tl3xg"]
 [ext_resource type="Resource" uid="uid://dnbgnsmowa1lf" path="res://Resources/missoes_mata_atlantica/variedade_arborea.tres" id="3_gxyob"]
 [ext_resource type="Resource" uid="uid://ct8ad8yf1xc1n" path="res://Resources/missoes_mata_atlantica/mata_ciliar.tres" id="4_vqumo"]
@@ -11,6 +12,8 @@
 
 [node name="MataAtlantica" type="Node2D"]
 script = ExtResource("1_tl3xg")
+
+[node name="Level_mico" parent="." instance=ExtResource("2_gxyob")]
 
 [node name="LevelMissions" parent="." instance=ExtResource("1_hh5a0")]
 missions = Array[ExtResource("2_tl3xg")]([ExtResource("3_gxyob"), ExtResource("4_vqumo"), ExtResource("5_3s61o")])
