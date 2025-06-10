@@ -1,3 +1,9 @@
-[gd_resource type="Resource" format=3 uid="uid://bmub8m1lgfly5"]
+[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://bmub8m1lgfly5"]
+
+[ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="1_d0umk"]
 
 [resource]
+script = ExtResource("1_d0umk")
+description = "Crie um rio com pelo menos 5 peças de rio conectadas"
+event_type = "rede_hidrica"
+target_count = 5
