@@ -7,7 +7,6 @@
 
 [node name="HBoxContainer" type="HBoxContainer"]
 layout_direction = 4
-anchors_preset = -1
 offset_right = 941.0
 offset_bottom = 56.0
 grow_horizontal = 2
