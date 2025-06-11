@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://6u4xktmicv4f"]
+
+[ext_resource type="FontFile" uid="uid://n2gpiq5t27td" path="res://Assets/UI/fontes/Nunito/static/Nunito-ExtraBold.ttf" id="1_lfyom"]
+[ext_resource type="Script" uid="uid://cqhx8daoqs7s7" path="res://scripts/menu_conc.gd" id="1_oxl0o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfyom"]
+bg_color = Color(0.188235, 0.145098, 0.505882, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cd6v"]
+bg_color = Color(0.984314, 0.792157, 0.054902, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oxl0o"]
+bg_color = Color(0.984314, 0.792157, 0.054902, 1)
+draw_center = false
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ejpks"]
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="menu_conc" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oxl0o")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1286.0
+offset_bottom = 718.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lfyom")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = -34.0
+offset_right = 168.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.188235, 0.145098, 0.505882, 1)
+theme_override_fonts/font = ExtResource("1_lfyom")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_6cd6v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oxl0o")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ejpks")
+text = "MENU PRINCIPAL"
+
+[connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://drcshyvqgym68"
-path="res://.godot/imported/Nunito-BlackItalic.ttf-f4c3a09cf14f1ccfac7da89453524ee2.fontdata"
+path="res://.godot/imported/Nunito-BlackItalic.ttf-13c0f262d167c8de0ffbb03c9d1fc356.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Nunito/static/Nunito-BlackItalic.ttf"
-dest_files=["res://.godot/imported/Nunito-BlackItalic.ttf-f4c3a09cf14f1ccfac7da89453524ee2.fontdata"]
+source_file="res://Assets/UI/fontes/Nunito/static/Nunito-BlackItalic.ttf"
+dest_files=["res://.godot/imported/Nunito-BlackItalic.ttf-13c0f262d167c8de0ffbb03c9d1fc356.fontdata"]
 
 [params]
 
