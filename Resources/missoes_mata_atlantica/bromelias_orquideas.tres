@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_6ebki")
-description = "Adicione 4 peças de floresta com bromélias e orquídeas"
+description = "Garanta uma floresta de árvores frutíferas de pelo menos 4 peças"
 event_type = "bromelias_orquideas"
 target_count = 4

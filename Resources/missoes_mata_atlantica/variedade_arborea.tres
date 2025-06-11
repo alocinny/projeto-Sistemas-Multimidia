@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_cwsn3")
-description = "Garanta a presença dos 3 tipos de árvores nativas"
+description = "Garanta a presença dos 3 tipos de peça"
 event_type = "variedade_arborea"
 target_count = 3

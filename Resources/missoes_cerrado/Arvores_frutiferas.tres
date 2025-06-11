@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_750fd")
-description = "Adicione pelo menos 2 peças de árvores frutiferas"
+description = "Adicione pelo menos 2 florestas diferentes com 4 peças "
 event_type = "Arvores_frutiferas"
-target_count = 3
+target_count = 2
 metadata/_custom_type_script = "uid://t13aiph8r3xx"

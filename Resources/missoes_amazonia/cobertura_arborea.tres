@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_5edg5")
-description = "Crie um cobertura densa com pelo menos 4 peças de floresta densa conectadas"
+description = "Crie um cobertura densa com pelo menos 10 peças de floresta densa conectadas"
 event_type = "cobertura_arborea"
-target_count = 4
+target_count = 10

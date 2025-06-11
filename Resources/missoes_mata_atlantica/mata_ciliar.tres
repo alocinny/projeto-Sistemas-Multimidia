@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_51qlw")
-description = "Adicione 3 peças com floresta adjacentes a peças de rio"
+description = "Adicione um rio com pelo menos a metade do tamanho da sua maior floresta"
 event_type = "mata_ciliar"
-target_count = 3
+target_count = 10

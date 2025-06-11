@@ -1,8 +1,9 @@
 extends Node
 
-@onready var controlador_dialogo = $Level_arara
+const Biome = preload("res://scripts/enums.gd").Biome
 @onready var controlador_progresso = $progressbar_missoes
 @onready var level_missions = $LevelMissions
+@onready var game_main = $GameMain
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,6 +13,9 @@ func _ready() -> void:
 	
 	var total_inicial = $LevelMissions.missions.size()
 	_on_level_missions_progress_updated(0, total_inicial)
+	
+	game_main.level_biome = Biome.AMAZONIA
+	game_main.generate_initial_tiles()
 
 
 func _on_level_missions_progress_updated(completed_count, total_count):
@@ -25,4 +29,16 @@ func _on_level_missions_progress_updated(completed_count, total_count):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if game_main.forest_sizes.size() > 0:
+		$LevelMissions.update_mission_progress("cobertura_arborea", game_main.forest_sizes.max())
+		
+	var big_river_count = 0
+	
+	for size in game_main.river_sizes:
+		if size >= 2:
+			big_river_count += 1
+		
+	$LevelMissions.update_mission_progress("palmeiras", big_river_count)	
+	
+	if game_main.river_sizes.size() > 0:
+		$LevelMissions.update_mission_progress("rede_hidrica", game_main.river_sizes.max())

@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_2hdd0")
-description = "Adicione 5 peças de arbustos da caatinga"
+description = "Garanta um campo de pelo menos 5 peças com arbustos da caatinga"
 event_type = "caatinga_arbustiva"
 target_count = 5

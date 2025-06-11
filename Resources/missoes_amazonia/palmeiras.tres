@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_acmn0")
-description = "Coloque 3 peças de palmeiral adjacentes a floresta densa"
+description = "Tenha 2 rios com pelo menos 2 peças"
 event_type = "palmeiras"
-target_count = 3
+target_count = 2

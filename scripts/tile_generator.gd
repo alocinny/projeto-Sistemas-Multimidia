@@ -13,6 +13,22 @@ var trees = {
 	],
 	Biome.PANTANAL: [
 		preload("res://Assets/elementos/pantanal/cambara.png")
+	],
+	Biome.AMAZONIA: [
+		preload("res://Assets/elementos/amazonia/acai.png"),
+		preload("res://Assets/elementos/amazonia/andiroba.png"),
+		preload("res://Assets/elementos/mata_atlantica/cajueiro.png"),
+		preload("res://Assets/elementos/amazonia/parapara.png")
+	],
+	Biome.CERRADO: [
+		preload("res://Assets/elementos/cerrado/ipe_amarelo.png"),
+		preload("res://Assets/elementos/cerrado/ipe_rosa.png"),
+		preload("res://Assets/elementos/cerrado/Jabuticaba.png"),
+	],
+	Biome.MATA_ATLANTICA: [
+		preload("res://Assets/elementos/mata_atlantica/cajueiro.png"),
+		preload("res://Assets/elementos/mata_atlantica/goiabeira.png"),
+		preload("res://Assets/elementos/mata_atlantica/pitangueira.png")
 	]
 }
 
@@ -28,7 +44,16 @@ var bushes = {
 	],
 	Biome.PANTANAL: [
 		preload("res://Assets/elementos/pantanal/acuri.png")
-	]
+	],
+	Biome.AMAZONIA: [
+		preload("res://Assets/elementos/pampas/capim-barba-de-bode-512x512.png"),
+	],
+	Biome.CERRADO: [
+		preload("res://Assets/elementos/cerrado/mosquitinho.png")
+	],
+	Biome.MATA_ATLANTICA: [
+		preload("res://Assets/elementos/mata_atlantica/bromelias-orquideas.png")
+	],
 }
 
 var rivers = [
@@ -57,6 +82,9 @@ func new_tile(biome, pos):
 	
 func choose_edges(biome, edges):
 	var tree_prob = 0.20
+	
+	if biome == Biome.AMAZONIA:
+		tree_prob = 2
 			
 	for i in 4:
 		if edges[i] != EdgeType.RIVER and randf() < tree_prob:

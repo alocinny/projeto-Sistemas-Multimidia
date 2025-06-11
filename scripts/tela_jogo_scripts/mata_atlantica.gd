@@ -1,7 +1,9 @@
 extends Node
 
+const Biome = preload("res://scripts/enums.gd").Biome
 @onready var controlador_progresso = $progressbar_missoes
 @onready var level_missions = $LevelMissions
+@onready var game_main = $GameMain
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,6 +13,9 @@ func _ready() -> void:
 	
 	var total_inicial = $LevelMissions.missions.size()
 	_on_level_missions_progress_updated(0, total_inicial)
+	
+	game_main.level_biome = Biome.MATA_ATLANTICA
+	game_main.generate_initial_tiles()
 
 
 func _on_level_missions_progress_updated(completed_count, total_count):
@@ -24,4 +29,21 @@ func _on_level_missions_progress_updated(completed_count, total_count):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	
+	if game_main.forest_sizes.size() > 0:
+		$LevelMissions.update_mission_progress("bromelias_orquideas", game_main.forest_sizes.max())
+	
+	var number = 0
+	
+	if game_main.river_sizes.size() > 0 and game_main.forest_sizes.size()  > 0:
+		if game_main.river_sizes.max() >= game_main.forest_sizes.max()/2:
+			number = 10
+	
+	$LevelMissions.update_mission_progress("mata_ciliar", number)
+	
+	var other_number = 0
+	
+	if game_main.river_sizes.size() > 0 and game_main.forest_sizes.size() > 0 and game_main.field_sizes.size()  > 0:
+		other_number = 3
+	
+	$LevelMissions.update_mission_progress("variedade_arborea", other_number)

@@ -17,7 +17,7 @@ colors = PackedColorArray(0.000235263, 0.199265, 0.660163, 1, 0.192884, 0.538019
 gradient = SubResource("Gradient_cq1h4")
 fill_to = Vector2(1, 1)
 
-[node name="Amazonia" type="Node2D"]
+[node name="Amazonia2" type="Node2D"]
 script = ExtResource("1_0peg4")
 
 [node name="TextureRect" type="TextureRect" parent="."]

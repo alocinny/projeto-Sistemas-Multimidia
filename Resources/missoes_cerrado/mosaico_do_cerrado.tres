@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_qwx36")
-description = "Intercale pelo menos 2 peças de campo limpo com 2 peças de cerrado strictu senso"
+description = "Garanta a presença de 3 peças de cada tipo"
 event_type = "mosaico_do_cerrado"
 target_count = 3
 metadata/_custom_type_script = "uid://t13aiph8r3xx"

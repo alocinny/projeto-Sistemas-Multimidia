@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_ic0d5")
-description = "Adicione 3 peças com um tipo de cactácea"
+description = "Garanta 5 florestas separadas"
 event_type = "cactaceas"
-target_count = 3
+target_count = 5

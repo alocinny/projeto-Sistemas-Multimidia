@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_ykea7")
-description = "adicionar pelo menos uma peça de rio"
+description = "adicionar pelo menos 5 peças de rio"
 event_type = "fontes_de_agua"
-target_count = 3
+target_count = 5
 metadata/_custom_type_script = "uid://t13aiph8r3xx"
