@@ -7,10 +7,11 @@
 [sub_resource type="LabelSettings" id="LabelSettings_32udp"]
 line_spacing = 0.0
 font = ExtResource("2_y1cjy")
+font_size = 26
 shadow_color = Color(0, 0, 0, 0.6)
 
 [node name="Dialog_screen" type="Control" node_paths=PackedStringArray("_name", "_dialog", "_faceset")]
-custom_minimum_size = Vector2(480, 120)
+custom_minimum_size = Vector2(640, 160)
 layout_mode = 3
 anchors_preset = 7
 anchor_left = 0.5
@@ -38,7 +39,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.6)
 
 [node name="HContainer" type="HBoxContainer" parent="Background"]
-custom_minimum_size = Vector2(468, 108)
+custom_minimum_size = Vector2(624, 144)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -53,11 +54,11 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Border" type="ColorRect" parent="Background/HContainer"]
-custom_minimum_size = Vector2(72, 0)
+custom_minimum_size = Vector2(144, 0)
 layout_mode = 2
 
 [node name="Faceset" type="TextureRect" parent="Background/HContainer/Border"]
-custom_minimum_size = Vector2(70, 72)
+custom_minimum_size = Vector2(140, 144)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -92,4 +93,5 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 0
 theme_override_constants/shadow_offset_x = 0
 theme_override_fonts/normal_font = ExtResource("2_y1cjy")
+theme_override_font_sizes/normal_font_size = 26
 text = "ola meu nome "

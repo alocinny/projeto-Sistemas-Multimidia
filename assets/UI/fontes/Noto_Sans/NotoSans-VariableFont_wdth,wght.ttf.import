@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://rp4vofbc0hsq"
-path="res://.godot/imported/NotoSans-VariableFont_wdth,wght.ttf-dacfe2f59a5fc522deb114ae3424edd4.fontdata"
+path="res://.godot/imported/NotoSans-VariableFont_wdth,wght.ttf-9caf28c69cfabe1c7a661bc94985192e.fontdata"
 
 [deps]
 
-source_file="res://Assets/UI/fontes/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf"
-dest_files=["res://.godot/imported/NotoSans-VariableFont_wdth,wght.ttf-dacfe2f59a5fc522deb114ae3424edd4.fontdata"]
+source_file="res://assets/UI/fontes/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf"
+dest_files=["res://.godot/imported/NotoSans-VariableFont_wdth,wght.ttf-9caf28c69cfabe1c7a661bc94985192e.fontdata"]
 
 [params]
 
