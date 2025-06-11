@@ -6,52 +6,46 @@ const _DIALOG_SCREEN: PackedScene = preload("res://dialog_scenes/dialog_screen.t
 var _dialog_mata_atlantica: Dictionary = {
 	0: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "Oi! Sou o Mico-leão-dourado (Leontopithecus rosalia).",
+		"dialog": "Oi! Sou o Mico-leão-dourado.",
 		"title": "Mico-leão-dourado"
 	},
 	1: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "Sou símbolo da luta pela conservação do bioma.",
+		"dialog": "Na Mata Atlântica, você está no bioma mais fragmentado do Brasil, ",
 		"title": "Mico-leão-dourado"
 	},
 	2: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "Dependo de florestas bem preservadas e conectadas para sobreviver.",
+		"dialog": "mas incrivelmente rico!",
 		"title": "Mico-leão-dourado"
 	},
 	3: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "O bioma é uma floresta tropical úmida, densa e rica em biodiversidade.",
+		"dialog": " A criação de corredores ecológicos aqui não é apenas para mim, o Mico-leão-dourado:",
 		"title": "Mico-leão-dourado"
 	},
 	4: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "O relevo é acidentado e sofre muito com a fragmentação.",
+		"dialog": " ela permite que as espécies se movam e se adaptem às mudanças de temperatura e umidade causadas pelo clima. ",
 		"title": "Mico-leão-dourado"
 	},
 	5: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "Missões:",
+		"dialog": "É como dar uma rota de fuga à natureza!",
 		"title": "Mico-leão-dourado"
 	},
 	6: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "• 'Corredores Ecológicos': Crie Y corredores de Mata Ciliar adjacentes a rios.",
+		"dialog": "• 'Ao restaurar a diversidade de árvores  e criar essas conexões, ",
 		"title": "Mico-leão-dourado"
 	},
 	7: {
 		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "• 'Riqueza de Epífitas': Adicione W peças de Floresta com Epífitas (bromélias, orquídeas).",
-		"title": "Mico-leão-dourado"
-	},
-	8: {
-		"faceset": "res://imagensNPC/real/mico.png",
-		"dialog": "• 'Reintroduzindo a Variedade': Garanta ao menos 3 tipos diferentes de árvores nativas.",
+		"dialog": "você está construindo um bioma mais forte e resiliente!",
 		"title": "Mico-leão-dourado"
 	}
+	
 }
-
-
 
 @export_category("Objects")
 @export var _hud: CanvasLayer = null

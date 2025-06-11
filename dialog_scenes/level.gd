@@ -12,77 +12,40 @@ var _dialog_data: Dictionary = {
 
 	1: {
 		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Moro na Amazônia uma floresta tropical vasta, úmida e cheia de vida!",
+		"dialog": "Você sabia que esta vasta floresta é um dos maiores pulmões do mundo?",
 		"title": "Arara-azul"
 	},
 
 	2: {
 		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Esse bioma é lar de uma biodiversidade incrível...",
+		"dialog": "Ela absorve bilhões de toneladas de carbono da atmosfera, um serviço climático vital!",
 		"title": "Arara-azul"
 	},
 
 	3: {
 		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "...e de muitos rios que cortam as matas verdes.",
+		"dialog": "Mas o desmatamento e as queimadas têm liberado esse carbono de volta, ",
 		"title": "Arara-azul"
 	},
 
 	4: {
 		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Mas tudo isso está ameaçado pelo desmatamento.",
+		"dialog": " intensificando as mudanças climáticas.",
 		"title": "Arara-azul"
 	},
 
 	5: {
 		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Eu, por exemplo, dependo de palmeiras específicas para sobreviver.",
+		"dialog": "Ao conectar estas peças de Floresta Densa e criar rios vitais",
 		"title": "Arara-azul"
 	},
 
 	6: {
 		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Elas são onde faço ninhos e encontro alimento.",
-		"title": "Arara-azul"
-	},
-
-	7: {
-		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Sua missão é ajudar a restaurar este ecossistema!",
-		"title": "Arara-azul"
-	},
-
-	8: {
-		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Vamos começar pela Missão 1:",
-		"title": "Arara-azul"
-	},
-
-	9: {
-		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Crie uma 'Cobertura Arbórea Densa' com pelo menos X peças de Floresta Densa conectadas.",
-		"title": "Arara-azul"
-	},
-
-	10: {
-		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Missão 2: Forme uma 'Rede Hídrica Vital' com pelo menos Y segmentos de Peça de Rio conectados.",
-		"title": "Arara-azul"
-	},
-
-	11: {
-		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Missão 3: Coloque Z peças de Palmeiral ao lado de áreas de Floresta Densa.",
-		"title": "Arara-azul"
-	},
-
-	12: {
-		"faceset": "res://imagensNPC/arara_azul.webp",
-		"dialog": "Quando terminar, volte aqui. Boa sorte, guardião da floresta!",
+		"dialog": ", você não só ajuda as espécies nativas como eu, mas também combate diretamente o aquecimento global!",
 		"title": "Arara-azul"
 	}
 }
-
 
 
 @export_category("Objects")

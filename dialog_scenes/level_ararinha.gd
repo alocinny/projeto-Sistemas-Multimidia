@@ -6,47 +6,37 @@ const _DIALOG_SCREEN: PackedScene = preload("res://dialog_scenes/dialog_screen.t
 var _dialog_caatinga: Dictionary = {
 	0: {
 		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "Olá! Sou a Ararinha-azul (Cyanopsitta spixii).",
+		"dialog": "Olá! Sou a Ararinha-azul.",
 		"title": "Ararinha-azul"
 	},
 	1: {
 		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "Estou extinta na natureza, mas há projetos de reintrodução.",
+		"dialog": "Bem-vindo à Caatinga, um bioma de beleza árida!",
 		"title": "Ararinha-azul"
 	},
 	2: {
 		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "Dependo da árvore Caraibeira para sobreviver.",
+		"dialog": "Aqui, aprender a gerenciar os Pontos de Água Escassos e a manter a Vegetação Resiliente  é vital.",
 		"title": "Ararinha-azul"
 	},
 	3: {
 		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "A Caatinga é um bioma semiárido com vegetação xerófita.",
+		"dialog": "As secas estão mais intensas e imprevisíveis devido às mudanças climáticas, ",
 		"title": "Ararinha-azul"
 	},
 	4: {
 		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "Tem cactos, arbustos espinhosos e rios intermitentes.",
+		"dialog": "tornando a vida aqui um desafio ainda maior.  ",
 		"title": "Ararinha-azul"
 	},
 	5: {
 		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "Missões:",
+		"dialog": "Sua missão de recriar esses oásis e plantar cactos adaptados",
 		"title": "Ararinha-azul"
 	},
 	6: {
 		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "• 'Vegetação Resiliente': Adicione X peças de Caatinga Arbustiva e Y de Caatinga Arbórea.",
-		"title": "Ararinha-azul"
-	},
-	7: {
-		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "• 'Pontos de Água Escassos': Crie W pequenos açudes ou poças temporárias.",
-		"title": "Ararinha-azul"
-	},
-	8: {
-		"faceset": "res://imagensNPC/real/ararinha_azul.png",
-		"dialog": "• 'Cactos Presentes': Adicione M peças contendo cactáceas como mandacaru e xique-xique.",
+		"dialog": "mostra como podemos nos adaptar e prosperar mesmo em condições extremas!",
 		"title": "Ararinha-azul"
 	}
 }

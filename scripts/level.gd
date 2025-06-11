@@ -5,81 +5,45 @@ const _DIALOG_SCREEN: PackedScene = preload("res://dialog_scenes/dialog_screen.t
 
 var _dialog_data: Dictionary = {
 	0: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Olá! Eu sou a Arara-azul-grande.",
-	"title": "Arara-azul"
+		"faceset": "res://imagensNPC/arara_azul.webp",
+		"dialog": "Olá! Eu sou a Arara-azul-grande.",
+		"title": "Arara-azul"
 	},
 
 	1: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Moro na Amazônia uma floresta tropical vasta, úmida e cheia de vida!",
-	"title": "Arara-azul"
+		"faceset": "res://imagensNPC/arara_azul.webp",
+		"dialog": "Você sabia que esta vasta floresta é um dos maiores pulmões do mundo?",
+		"title": "Arara-azul"
 	},
 
 	2: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Esse bioma é lar de uma biodiversidade incrível...",
-	"title": "Arara-azul"
+		"faceset": "res://imagensNPC/arara_azul.webp",
+		"dialog": "Ela absorve bilhões de toneladas de carbono da atmosfera, um serviço climático vital!",
+		"title": "Arara-azul"
 	},
 
 	3: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "...e de muitos rios que cortam as matas verdes.",
-	"title": "Arara-azul"
+		"faceset": "res://imagensNPC/arara_azul.webp",
+		"dialog": "Mas o desmatamento e as queimadas têm liberado esse carbono de volta, ",
+		"title": "Arara-azul"
 	},
 
 	4: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Mas tudo isso está ameaçado pelo desmatamento.",
-	"title": "Arara-azul"
+		"faceset": "res://imagensNPC/arara_azul.webp",
+		"dialog": " intensificando as mudanças climáticas.",
+		"title": "Arara-azul"
 	},
 
 	5: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Eu, por exemplo, dependo de palmeiras específicas para sobreviver.",
-	"title": "Arara-azul"
+		"faceset": "res://imagensNPC/arara_azul.webp",
+		"dialog": "Ao conectar estas peças de Floresta Densa e criar rios vitais",
+		"title": "Arara-azul"
 	},
 
 	6: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Elas são onde faço ninhos e encontro alimento.",
-	"title": "Arara-azul"
-	},
-
-	7: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Sua missão é ajudar a restaurar este ecossistema!",
-	"title": "Arara-azul"
-	},
-
-	8: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Vamos começar pela Missão 1:",
-	"title": "Arara-azul"
-	},
-
-	9: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Crie uma 'Cobertura Arbórea Densa' com pelo menos X peças de Floresta Densa conectadas.",
-	"title": "Arara-azul"
-	},
-
-	10: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Missão 2: Forme uma 'Rede Hídrica Vital' com pelo menos Y segmentos de Peça de Rio conectados.",
-	"title": "Arara-azul"
-	},
-
-	11: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Missão 3: Coloque Z peças de Palmeiral ao lado de áreas de Floresta Densa.",
-	"title": "Arara-azul"
-	},
-
-	12: {
-	"faceset": "res://imagensNPC/real/arara_azul.png",
-	"dialog": "Quando terminar, volte aqui. Boa sorte, guardião da floresta!",
-	"title": "Arara-azul"
+		"faceset": "res://imagensNPC/arara_azul.webp",
+		"dialog": ", você não só ajuda as espécies nativas como eu, mas também combate diretamente o aquecimento global!",
+		"title": "Arara-azul"
 	}
 }
 
