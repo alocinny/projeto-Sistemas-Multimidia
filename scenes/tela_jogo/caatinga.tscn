@@ -7,7 +7,7 @@
 [ext_resource type="Resource" uid="uid://r564tp5o8m8l" path="res://Resources/missoes_caatinga/caatinga_arborea.tres" id="3_3mrg7"]
 [ext_resource type="Resource" uid="uid://x20unxo0j7i5" path="res://Resources/missoes_caatinga/caatinga_arbustiva.tres" id="4_kluml"]
 [ext_resource type="Resource" uid="uid://s0b26iujhw11" path="res://Resources/missoes_caatinga/cactaceas.tres" id="5_wao8u"]
-[ext_resource type="PackedScene" path="res://scenes/progressbar_missoes.tscn" id="6_apav1"]
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="6_apav1"]
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_my2wx"]
 
 [node name="Caatinga" type="Node2D"]

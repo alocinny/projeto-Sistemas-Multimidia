@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_sf6p4")
-description = "crie uma área contínua de pelo menos 4 peças de campo nativo"
+description = "crie uma área contínua de pelo menos 5 peças de campo nativo"
 event_type = "campos_abertos"
-target_count = 3
+target_count = 5
 metadata/_custom_type_script = "uid://t13aiph8r3xx"

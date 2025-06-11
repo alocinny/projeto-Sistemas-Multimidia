@@ -11,12 +11,12 @@ signal mission_completed
 func is_complete() -> bool:
 	return current_count >= target_count
 
-func update_progress(amount: int = 1):
+func update_progress(amount: int):
 	if is_complete():
 		return
 
-	current_count += amount
-	print("Progresso da missão '", event_type, "': ", current_count, "/", target_count)
+	current_count = amount
+	#print("Progresso da missão '", event_type, "': ", current_count, "/", target_count)
 
 	if is_complete():
 		print("MISSÃO COMPLETA: ", description)

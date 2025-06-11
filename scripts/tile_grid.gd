@@ -1,5 +1,7 @@
 extends Node2D
 
+signal tile_placement(river_array, forest_array, field_array)
+
 const EdgeType = preload("res://scripts/enums.gd").EdgeType
 const TILE_SIZE = GameState.TILE_SIZE
 var tiles = {} #dictionary<Vector2i, Tile>
@@ -27,8 +29,10 @@ func place_tile(pos, tile):
 	tiles[pos] = tile
 	update_vacant()
 	
+	tile_placement.emit(get_group_sizes(EdgeType.RIVER), get_group_sizes(EdgeType.TREE), get_group_sizes(EdgeType.BUSH))
 	print("Rios: ",get_group_sizes(EdgeType.RIVER))
 	print("Florestas: ",get_group_sizes(EdgeType.TREE))
+	print("Campos: ",get_group_sizes(EdgeType.BUSH))
 	print("")
 	
 func update_vacant():
@@ -58,77 +62,88 @@ func can_place_tile(dir, tile):
 func get_group_sizes(type):
 	var visited = {}
 	var group_sizes = []
-
+	
 	for pos in tiles.keys():
 		if visited.has(pos):
 			continue
-
+		
 		var tile = tiles[pos]
 		if tile == null:
 			continue
-
-		var has_type = false
-		for edge in tile.edges:
-			if edge == type:
-				has_type = true
-				break
-		if not has_type:
+			
+		var is_valid := false
+		match type:
+			EdgeType.TREE:
+				is_valid = EdgeType.TREE in tile.edges
+			EdgeType.RIVER:
+				is_valid = EdgeType.RIVER in tile.edges
+			EdgeType.BUSH:
+				is_valid = EdgeType.TREE not in tile.edges
+				
+		if not is_valid:
 			continue
-
+			
 		var size = flood_fill(pos, visited, type)
 		group_sizes.append(size)
-
+		
 	return group_sizes
 
 
 func flood_fill(start_pos, visited, type):
 	if visited.has(start_pos):
 		return 0
-
+		
 	var stack = [start_pos]
 	var count = 0
-
+	
 	while stack.size() > 0:
 		var current = stack.pop_back()
 		if visited.has(current):
 			continue
 		visited[current] = true
-
+		
 		var tile = tiles.get(current)
 		if tile == null:
 			continue
-
-		var has_type = false
-		for edge in tile.edges:
-			if edge == type:
-				has_type = true
-				break
-		if not has_type:
+			
+		var is_valid := false
+		match type:
+			EdgeType.TREE:
+				is_valid = EdgeType.TREE in tile.edges
+			EdgeType.RIVER:
+				is_valid = EdgeType.RIVER in tile.edges
+			EdgeType.BUSH:
+				is_valid = EdgeType.TREE not in tile.edges
+				
+		if not is_valid:
 			continue
-
+			
 		count += 1
-		if type == EdgeType.RIVER:
-			for dir in [Vector2i.UP, Vector2i.DOWN, Vector2i.LEFT, Vector2i.RIGHT]:
-				var i = direction[dir]
-				if tile.edges[i] == type:
-					var neighbor_pos = current + dir
-					var neighbor = tiles.get(neighbor_pos)
-					if neighbor == null or visited.has(neighbor_pos):
-						continue
-
-					var opposite_i = opposite_direction[dir]
-					if neighbor.edges[opposite_i] == type:
+		
+		for dir in [Vector2i.UP, Vector2i.DOWN, Vector2i.LEFT, Vector2i.RIGHT]:
+			var neighbor_pos = current + dir
+			if visited.has(neighbor_pos):
+				continue
+				
+			var neighbor = tiles.get(neighbor_pos)
+			if neighbor == null:
+				continue
+				
+			match type:
+				EdgeType.RIVER:
+					var i = direction[dir]
+					if tile.edges[i] == EdgeType.RIVER:
+						var opposite_i = opposite_direction[dir]
+						if neighbor.edges[opposite_i] == EdgeType.RIVER:
+							stack.append(neighbor_pos)
+							
+				EdgeType.TREE:
+					if EdgeType.TREE in neighbor.edges:
 						stack.append(neighbor_pos)
 						
-		elif type == EdgeType.TREE:
-			for dir in [Vector2i.UP, Vector2i.DOWN, Vector2i.LEFT, Vector2i.RIGHT]:
-				var neighbor_pos = current + dir
-				var neighbor = tiles.get(neighbor_pos)
-				if neighbor == null or visited.has(neighbor_pos):
-					continue
-
-				if EdgeType.TREE in neighbor.edges:
-					stack.append(neighbor_pos)
+				EdgeType.BUSH:
+					if EdgeType.TREE not in neighbor.edges:
+						stack.append(neighbor_pos)
 
 	return count
 

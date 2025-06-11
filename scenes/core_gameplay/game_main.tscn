@@ -44,4 +44,5 @@ y_sort_enabled = true
 [node name="DragHandler" type="Node2D" parent="."]
 script = ExtResource("3_y3nk4")
 
+[connection signal="tile_placement" from="TileGrid" to="." method="_on_tile_grid_tile_placement"]
 [connection signal="hand_tile_removed" from="DragHandler" to="." method="_on_drag_handler_hand_tile_removed"]
