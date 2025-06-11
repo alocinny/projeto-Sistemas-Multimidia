@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://dkfma1aabju1w"]
 
 [ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_5pnh1"]
-[ext_resource type="Script" uid="uid://yjffqlqkjq27" path="res://scripts/menuCerrado.gd" id="1_ktnwa"]
-[ext_resource type="FontFile" uid="uid://bex28l0108g5" path="res://Resources/CodecPro-Regular.ttf" id="3_2gcxr"]
-[ext_resource type="FontFile" uid="uid://v14i2yxne45l" path="res://Resources/Codec Pro ExtraBold.ttf" id="4_rae5g"]
+
+[ext_resource type="Script" path="res://scripts/menuCerrado.gd" id="1_ktnwa"]
+[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_ktnwa"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1vsb4"]
 texture = ExtResource("1_5pnh1")
