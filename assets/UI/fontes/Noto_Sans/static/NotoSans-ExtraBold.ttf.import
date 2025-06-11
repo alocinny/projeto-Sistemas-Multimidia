@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://boesemu412juk"
-path="res://.godot/imported/NotoSans-ExtraBold.ttf-6afaef1e68edb4ad92cdf0f0b58c1d8d.fontdata"
+path="res://.godot/imported/NotoSans-ExtraBold.ttf-2ef996eb033887d88dd28ed9e6c1f67f.fontdata"
 
 [deps]
 
-source_file="res://Assets/UI/fontes/Noto_Sans/static/NotoSans-ExtraBold.ttf"
-dest_files=["res://.godot/imported/NotoSans-ExtraBold.ttf-6afaef1e68edb4ad92cdf0f0b58c1d8d.fontdata"]
+source_file="res://assets/UI/fontes/Noto_Sans/static/NotoSans-ExtraBold.ttf"
+dest_files=["res://.godot/imported/NotoSans-ExtraBold.ttf-2ef996eb033887d88dd28ed9e6c1f67f.fontdata"]
 
 [params]
 

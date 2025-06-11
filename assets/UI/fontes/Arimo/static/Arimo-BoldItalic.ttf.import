@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://80xm6rjjtmmi"
-path="res://.godot/imported/Arimo-BoldItalic.ttf-062959d3e3b45702b11a69ca67fe9022.fontdata"
+path="res://.godot/imported/Arimo-BoldItalic.ttf-92ef9d3a42a1acee340db3f7e8ef669f.fontdata"
 
 [deps]
 
-source_file="res://Assets/UI/fontes/Arimo/static/Arimo-BoldItalic.ttf"
-dest_files=["res://.godot/imported/Arimo-BoldItalic.ttf-062959d3e3b45702b11a69ca67fe9022.fontdata"]
+source_file="res://assets/UI/fontes/Arimo/static/Arimo-BoldItalic.ttf"
+dest_files=["res://.godot/imported/Arimo-BoldItalic.ttf-92ef9d3a42a1acee340db3f7e8ef669f.fontdata"]
 
 [params]
 

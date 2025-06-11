@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://drirr01l1wrix"
-path="res://.godot/imported/vinizinho.ttf-115ae1c63992a8d1f0e2e90ed71c2c09.fontdata"
+path="res://.godot/imported/vinizinho.ttf-64e87dec7bc553e344ba9d0731b472d2.fontdata"
 
 [deps]
 
-source_file="res://Assets/UI/fontes/vinizinho.ttf"
-dest_files=["res://.godot/imported/vinizinho.ttf-115ae1c63992a8d1f0e2e90ed71c2c09.fontdata"]
+source_file="res://assets/UI/fontes/vinizinho.ttf"
+dest_files=["res://.godot/imported/vinizinho.ttf-64e87dec7bc553e344ba9d0731b472d2.fontdata"]
 
 [params]
 

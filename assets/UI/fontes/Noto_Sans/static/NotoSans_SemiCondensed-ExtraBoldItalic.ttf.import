@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://hsm6skd21v1k"
-path="res://.godot/imported/NotoSans_SemiCondensed-ExtraBoldItalic.ttf-c8435bed2cdd7a576f80d162d48f9a58.fontdata"
+path="res://.godot/imported/NotoSans_SemiCondensed-ExtraBoldItalic.ttf-db54fa65929545ec652ae51cb40f402a.fontdata"
 
 [deps]
 
-source_file="res://Assets/UI/fontes/Noto_Sans/static/NotoSans_SemiCondensed-ExtraBoldItalic.ttf"
-dest_files=["res://.godot/imported/NotoSans_SemiCondensed-ExtraBoldItalic.ttf-c8435bed2cdd7a576f80d162d48f9a58.fontdata"]
+source_file="res://assets/UI/fontes/Noto_Sans/static/NotoSans_SemiCondensed-ExtraBoldItalic.ttf"
+dest_files=["res://.godot/imported/NotoSans_SemiCondensed-ExtraBoldItalic.ttf-db54fa65929545ec652ae51cb40f402a.fontdata"]
 
 [params]
 
