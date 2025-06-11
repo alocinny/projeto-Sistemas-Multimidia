@@ -6,6 +6,8 @@ extends CanvasLayer
 @onready var statusLabel: Label = $Control/HBoxContainer/NinePatchRect/statuslabel
 @onready var checklist_container: VBoxContainer = $checkListContainer 
 
+signal missions_complete
+
 var mission_ui_map = {}
 
 func create_checklist(missions_array: Array[Mission]):
@@ -34,3 +36,6 @@ func update_progressBar(valor: float) -> void:
 	matchStatus.value = valor
 	var porcentagem = int((valor - matchStatus.min_value) / (matchStatus.max_value - matchStatus.min_value)*100.0)
 	statusLabel.text = "%d%%" % porcentagem
+	
+	if porcentagem == 100:
+		emit_signal("missions_complete")

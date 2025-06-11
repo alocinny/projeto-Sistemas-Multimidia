@@ -39,3 +39,7 @@ func _process(delta: float) -> void:
 		$LevelMissions.update_mission_progress("caatinga_arbustiva", game_main.field_sizes.max())
 		
 	$LevelMissions.update_mission_progress("cactaceas", game_main.forest_sizes.size())
+
+
+func _on_progressbar_missoes_missions_complete() -> void:
+	get_tree().change_scene_to_file("res://scenes/Interface/menu_conc.tscn")

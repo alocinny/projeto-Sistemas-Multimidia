@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://6u4xktmicv4f"]
+[gd_scene load_steps=8 format=3 uid="uid://6u4xktmicv4f"]
 
 [ext_resource type="FontFile" uid="uid://n2gpiq5t27td" path="res://assets/UI/fontes/Nunito/static/Nunito-ExtraBold.ttf" id="1_lfyom"]
 [ext_resource type="Script" uid="uid://cqhx8daoqs7s7" path="res://scripts/menu_conc.gd" id="1_oxl0o"]
+[ext_resource type="FontFile" uid="uid://v14i2yxne45l" path="res://Resources/Codec Pro ExtraBold.ttf" id="2_6cd6v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfyom"]
 bg_color = Color(0.188235, 0.145098, 0.505882, 1)
@@ -54,13 +55,22 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -190.0
-offset_top = -50.0
-offset_right = 168.0
-offset_bottom = 34.0
+offset_left = -346.0
+offset_top = -53.623
+offset_right = 324.0
+offset_bottom = 88.377
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0.188235, 0.145098, 0.505882, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("2_6cd6v")
+theme_override_font_sizes/font_size = 110
+text = "Você venceu"
+horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2

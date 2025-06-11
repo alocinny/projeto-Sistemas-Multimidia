@@ -42,3 +42,7 @@ func _process(delta: float) -> void:
 	
 	if game_main.river_sizes.size() > 0:
 		$LevelMissions.update_mission_progress("rede_hidrica", game_main.river_sizes.max())
+
+
+func _on_progressbar_missoes_missions_complete() -> void:
+	get_tree().change_scene_to_file("res://scenes/Interface/menu_conc.tscn")

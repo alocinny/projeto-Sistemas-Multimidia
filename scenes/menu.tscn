@@ -89,22 +89,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_mae5d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vsb4k")
 text = "Start"
 
-[node name="options" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_con2f")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ouk20")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ouk20")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_mae5d")
-theme_override_styles/normal = SubResource("StyleBoxFlat_vsb4k")
-text = "Options
-"
-
 [node name="quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -157,5 +141,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

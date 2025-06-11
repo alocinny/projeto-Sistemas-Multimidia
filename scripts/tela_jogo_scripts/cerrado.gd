@@ -50,3 +50,7 @@ func _process(delta: float) -> void:
 		number = 3
 	
 	$LevelMissions.update_mission_progress("mosaico_do_cerrado", number)
+
+
+func _on_progressbar_missoes_missions_complete() -> void:
+	get_tree().change_scene_to_file("res://scenes/Interface/menu_conc.tscn")

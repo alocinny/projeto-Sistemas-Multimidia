@@ -35,3 +35,5 @@ missions = Array[ExtResource("2_l1xmc")]([ExtResource("3_0peg4"), ExtResource("4
 [node name="progressbar_missoes" parent="." instance=ExtResource("6_mdu4q")]
 
 [node name="GameMain" parent="." instance=ExtResource("7_d0sr1")]
+
+[connection signal="missions_complete" from="progressbar_missoes" to="." method="_on_progressbar_missoes_missions_complete"]

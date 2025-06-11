@@ -47,3 +47,7 @@ func _process(delta: float) -> void:
 		other_number = 3
 	
 	$LevelMissions.update_mission_progress("variedade_arborea", other_number)
+
+
+func _on_progressbar_missoes_missions_complete() -> void:
+	get_tree().change_scene_to_file("res://scenes/Interface/menu_conc.tscn")
