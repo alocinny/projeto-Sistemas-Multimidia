@@ -16,7 +16,7 @@ func _on_button_3_pressed() -> void:
 
 
 func _on_button_4_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/dialog_screen.tscn")
+	get_tree().change_scene_to_file("res://scenes/tela_jogo/caatinga.tscn")
 
 
 func _on_button_pressed() -> void:

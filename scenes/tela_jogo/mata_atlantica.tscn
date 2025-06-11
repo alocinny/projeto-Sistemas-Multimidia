@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dhf4ylo6v2t3e"]
+[gd_scene load_steps=12 format=3 uid="uid://dhf4ylo6v2t3e"]
 
 [ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_hh5a0"]
 [ext_resource type="Script" uid="uid://bvjbcbj3jwaj3" path="res://scripts/tela_jogo_scripts/mata_atlantica.gd" id="1_tl3xg"]
@@ -7,11 +7,25 @@
 [ext_resource type="Resource" uid="uid://dnbgnsmowa1lf" path="res://Resources/missoes_mata_atlantica/variedade_arborea.tres" id="3_gxyob"]
 [ext_resource type="Resource" uid="uid://ct8ad8yf1xc1n" path="res://Resources/missoes_mata_atlantica/mata_ciliar.tres" id="4_vqumo"]
 [ext_resource type="Resource" uid="uid://doy702rf3l46m" path="res://Resources/missoes_mata_atlantica/bromelias_orquideas.tres" id="5_3s61o"]
-[ext_resource type="PackedScene" path="res://scenes/progressbar_missoes.tscn" id="6_govew"]
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="6_govew"]
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_owpxb"]
+
+[sub_resource type="Gradient" id="Gradient_gxyob"]
+colors = PackedColorArray(0.000235263, 0.199265, 0.660163, 1, 0.192884, 0.538019, 0.951966, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vqumo"]
+gradient = SubResource("Gradient_gxyob")
+fill_to = Vector2(1, 1)
 
 [node name="MataAtlantica" type="Node2D"]
 script = ExtResource("1_tl3xg")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -34429.0
+offset_top = -22846.0
+offset_right = 30912.0
+offset_bottom = 27554.0
+texture = SubResource("GradientTexture2D_vqumo")
 
 [node name="Level_mico" parent="." instance=ExtResource("2_gxyob")]
 

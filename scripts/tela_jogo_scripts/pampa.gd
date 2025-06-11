@@ -1,7 +1,9 @@
 extends Node
 
+const Biome = preload("res://scripts/enums.gd").Biome
 @onready var controlador_progresso = $progressbar_missoes
 @onready var level_missions = $LevelMissions
+@onready var game_main = $GameMain
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,6 +13,9 @@ func _ready() -> void:
 	
 	var total_inicial = $LevelMissions.missions.size()
 	_on_level_missions_progress_updated(0, total_inicial)
+	
+	game_main.level_biome = Biome.PAMPAS
+	game_main.generate_initial_tiles()
 
 
 func _on_level_missions_progress_updated(completed_count, total_count):
@@ -24,12 +29,16 @@ func _on_level_missions_progress_updated(completed_count, total_count):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
-'''
-tem q adicionar o progresso das missões:
+	$LevelMissions.update_mission_progress("banhados_essenciais", game_main.river_sizes.size())
 	
-$LevelMissions.update_mission_progress("banhados_essenciais")
-$LevelMissions.update_mission_progress("campos_abertos")
-$LevelMissions.update_mission_progress("gramineas")
-'''
+	if game_main.field_sizes.size() > 0:
+		$LevelMissions.update_mission_progress("campos_abertos", game_main.field_sizes.max())
+		
+	var big_field_count = 0
+	
+	for size in game_main.field_sizes:
+		if size >= 3:
+			big_field_count += 1
+			
+
+	$LevelMissions.update_mission_progress("gramineas_nativas", big_field_count)

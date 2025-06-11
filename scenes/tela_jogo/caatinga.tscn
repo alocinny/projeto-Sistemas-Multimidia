@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://d1hg70rtipj1q"]
+[gd_scene load_steps=12 format=3 uid="uid://d1hg70rtipj1q"]
 
 [ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_a46qn"]
 [ext_resource type="Script" uid="uid://cje6h45n0aobd" path="res://scripts/tela_jogo_scripts/caatinga.gd" id="1_syiim"]
@@ -7,11 +7,25 @@
 [ext_resource type="Resource" uid="uid://r564tp5o8m8l" path="res://Resources/missoes_caatinga/caatinga_arborea.tres" id="3_3mrg7"]
 [ext_resource type="Resource" uid="uid://x20unxo0j7i5" path="res://Resources/missoes_caatinga/caatinga_arbustiva.tres" id="4_kluml"]
 [ext_resource type="Resource" uid="uid://s0b26iujhw11" path="res://Resources/missoes_caatinga/cactaceas.tres" id="5_wao8u"]
-[ext_resource type="PackedScene" path="res://scenes/progressbar_missoes.tscn" id="6_apav1"]
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="6_apav1"]
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_my2wx"]
+
+[sub_resource type="Gradient" id="Gradient_3mrg7"]
+colors = PackedColorArray(0.000235263, 0.199265, 0.660163, 1, 0.192884, 0.538019, 0.951966, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kluml"]
+gradient = SubResource("Gradient_3mrg7")
+fill_to = Vector2(1, 1)
 
 [node name="Caatinga" type="Node2D"]
 script = ExtResource("1_syiim")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -34429.0
+offset_top = -22846.0
+offset_right = 30912.0
+offset_bottom = 27554.0
+texture = SubResource("GradientTexture2D_kluml")
 
 [node name="Level_ararinha" parent="." instance=ExtResource("2_3mrg7")]
 

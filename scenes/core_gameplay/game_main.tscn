@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bb5qovqyva2ym" path="res://scripts/game_main.gd" id="1_p1baw"]
 [ext_resource type="Script" uid="uid://dnnaw8engdol3" path="res://scripts/tile_generator.gd" id="2_omk24"]
-[ext_resource type="Script" path="res://scripts/camera.gd" id="2_vyjl2"]
+[ext_resource type="Script" uid="uid://ccyymsq7vqs0v" path="res://scripts/camera.gd" id="2_vyjl2"]
 [ext_resource type="Script" uid="uid://d2rxvbea1sftl" path="res://scripts/drag_handler.gd" id="3_y3nk4"]
 [ext_resource type="PackedScene" uid="uid://h0nqmstgihjd" path="res://scenes/core_gameplay/tile_grid.tscn" id="4_omk24"]
 [ext_resource type="Script" uid="uid://drncec85efn7a" path="res://scripts/hand_manager.gd" id="5_y3nk4"]
@@ -44,4 +44,5 @@ y_sort_enabled = true
 [node name="DragHandler" type="Node2D" parent="."]
 script = ExtResource("3_y3nk4")
 
+[connection signal="tile_placement" from="TileGrid" to="." method="_on_tile_grid_tile_placement"]
 [connection signal="hand_tile_removed" from="DragHandler" to="." method="_on_drag_handler_hand_tile_removed"]

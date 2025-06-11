@@ -18,7 +18,7 @@ func _ready():
 	progress_updated.emit(completed_missions_count, missions.size())
 
 
-func update_mission_progress(event_type_received: String, amount: int = 1):
+func update_mission_progress(event_type_received: String, amount: int):
 	for mission in missions:
 		if mission.event_type == event_type_received:
 			mission.update_progress(amount)

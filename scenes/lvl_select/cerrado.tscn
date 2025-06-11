@@ -1,148 +1,94 @@
-[gd_scene load_steps=10 format=3 uid="uid://dkfma1aabju1w"]
+[gd_scene load_steps=14 format=3 uid="uid://dec1uynupot0r"]
 
 [ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_5pnh1"]
+[ext_resource type="Script" uid="uid://yjffqlqkjq27" path="res://scripts/menuCerrado.gd" id="1_ktnwa"]
+[ext_resource type="FontFile" uid="uid://v14i2yxne45l" path="res://Resources/Codec Pro ExtraBold.ttf" id="2_5pnh1"]
+[ext_resource type="FontFile" uid="uid://bex28l0108g5" path="res://Resources/CodecPro-Regular.ttf" id="3_2gcxr"]
 
-[ext_resource type="Script" path="res://scripts/menuCerrado.gd" id="1_ktnwa"]
-[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_ktnwa"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1vsb4"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ktnwa"]
 texture = ExtResource("1_5pnh1")
-modulate_color = Color(0.505344, 0.505344, 0.505344, 1)
+modulate_color = Color(0.505882, 0.505882, 0.505882, 1)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lv0kf"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ktnwa"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3oxey"]
-bg_color = Color(0.0560257, 0.340737, 0.293693, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.14)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2gcxr"]
+bg_color = Color(0.054902, 0.341176, 0.294118, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iqqmi"]
-bg_color = Color(0.0169827, 0.180084, 0.152168, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.14)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rae5g"]
+bg_color = Color(0.0156863, 0.180392, 0.152941, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asuc0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tcty3"]
 bg_color = Color(0.188235, 0.145098, 0.505882, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.14)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rae5g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g1jr4"]
+bg_color = Color(0.054902, 0.341176, 0.294118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6q08"]
+bg_color = Color(0.0156863, 0.180392, 0.152941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxsn3"]
+bg_color = Color(0.188235, 0.145098, 0.505882, 1)
 
 [node name="Cerrado" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
 script = ExtResource("1_ktnwa")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_1vsb4")
-
-[node name="Button" type="Button" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -209.0
-offset_top = -34.5
-offset_bottom = 34.5
-grow_horizontal = 0
-grow_vertical = 2
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_lv0kf")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3oxey")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_iqqmi")
-theme_override_styles/normal = SubResource("StyleBoxFlat_asuc0")
-text = ">"
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(48.0411, 26.9766)
+theme_override_styles/panel = SubResource("StyleBoxTexture_ktnwa")
 
 [node name="Button2" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -34.5
+layout_mode = 0
+offset_top = 505.5
 offset_right = 209.0
-offset_bottom = 34.5
-grow_vertical = 2
+offset_bottom = 574.5
+scale = Vector2(1.00185, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_lv0kf")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3oxey")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_iqqmi")
-theme_override_styles/normal = SubResource("StyleBoxFlat_asuc0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ktnwa")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2gcxr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rae5g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tcty3")
 text = "<"
 
 [node name="Button3" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -104.0
-offset_top = -119.0
-offset_right = 105.0
-offset_bottom = -50.0
-grow_horizontal = 2
-grow_vertical = 0
+layout_mode = 0
+offset_left = 856.0
+offset_top = 961.0
+offset_right = 1065.0
+offset_bottom = 1030.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0.99558, 0.99558, 0.99558, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_2gcxr")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_lv0kf")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3oxey")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_iqqmi")
-theme_override_styles/normal = SubResource("StyleBoxFlat_asuc0")
-text = "JOGAR
-"
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rae5g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g1jr4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e6q08")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bxsn3")
+text = "Jogar"
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -31.5
-offset_top = -11.5
-offset_right = 31.5
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = 698.0
+offset_top = 488.0
+offset_right = 1222.0
+offset_bottom = 592.0
 theme_override_colors/font_shadow_color = Color(0.188235, 0.145098, 0.505882, 1)
 theme_override_constants/shadow_offset_y = 10
-theme_override_fonts/font = ExtResource("4_rae5g")
+theme_override_fonts/font = ExtResource("2_5pnh1")
 theme_override_font_sizes/font_size = 120
 text = "Cerrado"
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

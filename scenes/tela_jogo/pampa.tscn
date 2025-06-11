@@ -1,23 +1,37 @@
-[gd_scene load_steps=10 format=3 uid="uid://c6ri3d4x2rsdy"]
+[gd_scene load_steps=12 format=3 uid="uid://bsh0sse8th4vb"]
 
+[ext_resource type="PackedScene" uid="uid://bw0y3r3wvwxkm" path="res://dialog_scenes/level_graxaim.tscn" id="1_hmdd8"]
 [ext_resource type="Script" uid="uid://c2koa6hr43m7a" path="res://scripts/tela_jogo_scripts/pampa.gd" id="1_lmhuu"]
-[ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="1_mh083"]
-[ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_ra7rw"]
-[ext_resource type="PackedScene" uid="uid://bw0y3r3wvwxkm" path="res://dialog_scenes/level_graxaim.tscn" id="2_cq1h4"]
-[ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="2_hmdd8"]
-[ext_resource type="Resource" uid="uid://4lwfiy2it1cf" path="res://Resources/missoes_pampa/campos_abertos.tres" id="3_hmdd8"]
-[ext_resource type="Resource" uid="uid://jnqp5p7s86ri" path="res://Resources/missoes_pampa/gramineas.tres" id="4_gbwer"]
-[ext_resource type="Resource" uid="uid://wu0xf5ruvc8w" path="res://Resources/missoes_pampa/banhados_essenciais.tres" id="5_52n46"]
-[ext_resource type="PackedScene" path="res://scenes/progressbar_missoes.tscn" id="7_cq1h4"]
+[ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="2_gbwer"]
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="3_52n46"]
+[ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="4_cq1h4"]
+[ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="4_k156u"]
+[ext_resource type="Resource" uid="uid://wu0xf5ruvc8w" path="res://Resources/missoes_pampa/banhados_essenciais.tres" id="5_7ymxb"]
+[ext_resource type="Resource" uid="uid://4lwfiy2it1cf" path="res://Resources/missoes_pampa/campos_abertos.tres" id="6_71uiy"]
+[ext_resource type="Resource" uid="uid://jnqp5p7s86ri" path="res://Resources/missoes_pampa/gramineas.tres" id="7_n20ng"]
 
-[node name="Pampa" type="Node"]
+[sub_resource type="Gradient" id="Gradient_cq1h4"]
+colors = PackedColorArray(0.000235263, 0.199265, 0.660163, 1, 0.192884, 0.538019, 0.951966, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7ymxb"]
+gradient = SubResource("Gradient_cq1h4")
+fill_to = Vector2(1, 1)
+
+[node name="Pampa" type="Node2D"]
 script = ExtResource("1_lmhuu")
 
-[node name="Level_graxaim" parent="." instance=ExtResource("2_cq1h4")]
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -34429.0
+offset_top = -22846.0
+offset_right = 30912.0
+offset_bottom = 27554.0
+texture = SubResource("GradientTexture2D_7ymxb")
 
-[node name="LevelMissions" parent="." instance=ExtResource("1_ra7rw")]
-missions = Array[ExtResource("2_hmdd8")]([ExtResource("3_hmdd8"), ExtResource("4_gbwer"), ExtResource("5_52n46")])
+[node name="Level_graxaim" parent="." instance=ExtResource("1_hmdd8")]
 
-[node name="progressbar_missoes" parent="." instance=ExtResource("7_cq1h4")]
+[node name="LevelMissions" parent="." instance=ExtResource("2_gbwer")]
+missions = Array[ExtResource("4_cq1h4")]([ExtResource("5_7ymxb"), ExtResource("6_71uiy"), ExtResource("7_n20ng")])
 
-[node name="GameMain" parent="." instance=ExtResource("1_mh083")]
+[node name="progressbar_missoes" parent="." instance=ExtResource("3_52n46")]
+
+[node name="GameMain" parent="." instance=ExtResource("4_k156u")]
