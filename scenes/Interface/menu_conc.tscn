@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://6u4xktmicv4f"]
 
-[ext_resource type="FontFile" uid="uid://n2gpiq5t27td" path="res://Assets/UI/fontes/Nunito/static/Nunito-ExtraBold.ttf" id="1_lfyom"]
+[ext_resource type="FontFile" uid="uid://n2gpiq5t27td" path="res://assets/UI/fontes/Nunito/static/Nunito-ExtraBold.ttf" id="1_lfyom"]
 [ext_resource type="Script" uid="uid://cqhx8daoqs7s7" path="res://scripts/menu_conc.gd" id="1_oxl0o"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfyom"]
@@ -44,6 +44,7 @@ script = ExtResource("1_oxl0o")
 layout_mode = 0
 offset_right = 1286.0
 offset_bottom = 718.0
+scale = Vector2(1.4931, 1.50306)
 theme_override_styles/panel = SubResource("StyleBoxFlat_lfyom")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
