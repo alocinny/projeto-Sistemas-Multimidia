@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cyvsoni7a6gd1"
-path="res://.godot/imported/NotoSans_SemiCondensed-ThinItalic.ttf-46080ae771421f696d613e2fc1bb02f6.fontdata"
+path="res://.godot/imported/NotoSans_SemiCondensed-ThinItalic.ttf-e79edddf5c11e533df0e6b170007a1c7.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Noto_Sans/static/NotoSans_SemiCondensed-ThinItalic.ttf"
-dest_files=["res://.godot/imported/NotoSans_SemiCondensed-ThinItalic.ttf-46080ae771421f696d613e2fc1bb02f6.fontdata"]
+source_file="res://Assets/UI/fontes/Noto_Sans/static/NotoSans_SemiCondensed-ThinItalic.ttf"
+dest_files=["res://.godot/imported/NotoSans_SemiCondensed-ThinItalic.ttf-e79edddf5c11e533df0e6b170007a1c7.fontdata"]
 
 [params]
 

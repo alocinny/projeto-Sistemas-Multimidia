@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cxs4ler8e4unq"
-path="res://.godot/imported/Arimo-Italic.ttf-51b69f7843bba9d5071ea2f6e40d8383.fontdata"
+uid="uid://v14i2yxne45l"
+path="res://.godot/imported/Codec Pro ExtraBold.ttf-d8b73c1bd881d15a340f98d58231cdde.fontdata"
 
 [deps]
 
-source_file="res://Assets/UI/fontes/Arimo/static/Arimo-Italic.ttf"
-dest_files=["res://.godot/imported/Arimo-Italic.ttf-51b69f7843bba9d5071ea2f6e40d8383.fontdata"]
+source_file="res://Resources/Codec Pro ExtraBold.ttf"
+dest_files=["res://.godot/imported/Codec Pro ExtraBold.ttf-d8b73c1bd881d15a340f98d58231cdde.fontdata"]
 
 [params]
 

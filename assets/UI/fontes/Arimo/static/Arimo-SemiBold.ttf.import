@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bfwds4entmscw"
-path="res://.godot/imported/Arimo-SemiBold.ttf-440b2f4a6b805afdbaf404f3b99ece8a.fontdata"
+path="res://.godot/imported/Arimo-SemiBold.ttf-08021d7cae43f7823ab37d55660a607e.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Arimo/static/Arimo-SemiBold.ttf"
-dest_files=["res://.godot/imported/Arimo-SemiBold.ttf-440b2f4a6b805afdbaf404f3b99ece8a.fontdata"]
+source_file="res://Assets/UI/fontes/Arimo/static/Arimo-SemiBold.ttf"
+dest_files=["res://.godot/imported/Arimo-SemiBold.ttf-08021d7cae43f7823ab37d55660a607e.fontdata"]
 
 [params]
 
