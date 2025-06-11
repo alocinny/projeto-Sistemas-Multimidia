@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_3egve"]
 [ext_resource type="Script" uid="uid://df6ypa2dpmow4" path="res://scripts/menuPampa.gd" id="1_d2vqf"]
-[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_nrg2c"]
-[ext_resource type="FontFile" uid="uid://v14i2yxne45l" path="res://Resources/Codec Pro ExtraBold.ttf" id="4_lhupw"]
+[ext_resource type="FontFile" uid="uid://bex28l0108g5" path="res://Resources/CodecPro-Regular.ttf" id="3_lhupw"]
+[ext_resource type="FontFile" uid="uid://v14i2yxne45l" path="res://Resources/Codec Pro ExtraBold.ttf" id="4_53hpj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mqx0w"]
 texture = ExtResource("1_3egve")
@@ -12,7 +12,7 @@ modulate_color = Color(0.505344, 0.505344, 0.505344, 1)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b4hu4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vg1ap"]
-bg_color = Color(0.188235, 0.145098, 0.505882, 1)
+bg_color = Color(0.0560257, 0.340737, 0.293693, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -21,7 +21,7 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.14)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tregq"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.0169827, 0.180084, 0.152168, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -68,9 +68,9 @@ offset_top = -34.5
 offset_bottom = 34.5
 grow_horizontal = 0
 grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.99558, 0.99558, 0.99558, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_b4hu4")
@@ -88,9 +88,9 @@ offset_top = -34.5
 offset_right = 209.0
 offset_bottom = 34.5
 grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_b4hu4")
@@ -116,13 +116,13 @@ theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_nrg2c")
+theme_override_fonts/font = ExtResource("3_lhupw")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_b4hu4")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vg1ap")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_tregq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_trse2")
-text = "Jogar"
+text = "JOGAR"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -139,7 +139,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0.188235, 0.145098, 0.505882, 1)
 theme_override_constants/shadow_offset_y = 10
-theme_override_fonts/font = ExtResource("4_lhupw")
+theme_override_fonts/font = ExtResource("4_53hpj")
 theme_override_font_sizes/font_size = 120
 text = "Pampa"
 

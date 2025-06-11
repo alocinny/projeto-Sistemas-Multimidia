@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://clnjpyl7l7cnp"]
+[gd_scene load_steps=2 format=3 uid="uid://clnjpyl7l7cnp"]
+
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="6_knerb"]
 
 [node name="interface" type="Control"]
 layout_mode = 3
@@ -10,14 +12,4 @@ offset_bottom = -1030.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MatchStatus" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-script = null
+[node name="MatchStatus" parent="." instance=ExtResource("6_knerb")]
