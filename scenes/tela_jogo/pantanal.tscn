@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://bij7pa4xwgrwm" path="res://Resources/missoes_pantanal/areas_alagadas.tres" id="3_fwskf"]
 [ext_resource type="Resource" uid="uid://b53px5tl6rot" path="res://Resources/missoes_pantanal/arvores_altas.tres" id="4_c8ygg"]
 [ext_resource type="Resource" uid="uid://bjhg4o03863fb" path="res://Resources/missoes_pantanal/riqueza_aquatica.tres" id="5_ixcs8"]
-[ext_resource type="PackedScene" path="res://scenes/progressbar_missoes.tscn" id="6_l57cr"]
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="6_l57cr"]
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_a5n3p"]
 
 [node name="Pantanal" type="Node2D"]

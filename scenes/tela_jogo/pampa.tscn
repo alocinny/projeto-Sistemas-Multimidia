@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c2koa6hr43m7a" path="res://scripts/tela_jogo_scripts/pampa.gd" id="1_lmhuu"]
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="1_mh083"]
-[ext_resource type="PackedScene" uid="uid://cibkyycidl51" path="res://scenes/level_missions.tscn" id="1_ra7rw"]
+[ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_ra7rw"]
 [ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="2_hmdd8"]
 [ext_resource type="Resource" uid="uid://4lwfiy2it1cf" path="res://Resources/missoes_pampa/campos_abertos.tres" id="3_hmdd8"]
 [ext_resource type="Resource" uid="uid://jnqp5p7s86ri" path="res://Resources/missoes_pampa/gramineas.tres" id="4_gbwer"]

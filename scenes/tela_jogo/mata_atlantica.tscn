@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://dnbgnsmowa1lf" path="res://Resources/missoes_mata_atlantica/variedade_arborea.tres" id="3_gxyob"]
 [ext_resource type="Resource" uid="uid://ct8ad8yf1xc1n" path="res://Resources/missoes_mata_atlantica/mata_ciliar.tres" id="4_vqumo"]
 [ext_resource type="Resource" uid="uid://doy702rf3l46m" path="res://Resources/missoes_mata_atlantica/bromelias_orquideas.tres" id="5_3s61o"]
-[ext_resource type="PackedScene" path="res://scenes/progressbar_missoes.tscn" id="6_govew"]
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="6_govew"]
 [ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_owpxb"]
 
 [node name="MataAtlantica" type="Node2D"]

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c7v0kcv7g4cis"
-path="res://.godot/imported/NotoSans_Condensed-Thin.ttf-8e2efc16ba69da04a4a356a42f5765fd.fontdata"
+path="res://.godot/imported/NotoSans_Condensed-Thin.ttf-3d9c18395d11894973a37e11617a9a85.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Noto_Sans/static/NotoSans_Condensed-Thin.ttf"
-dest_files=["res://.godot/imported/NotoSans_Condensed-Thin.ttf-8e2efc16ba69da04a4a356a42f5765fd.fontdata"]
+source_file="res://Assets/UI/fontes/Noto_Sans/static/NotoSans_Condensed-Thin.ttf"
+dest_files=["res://.godot/imported/NotoSans_Condensed-Thin.ttf-3d9c18395d11894973a37e11617a9a85.fontdata"]
 
 [params]
 

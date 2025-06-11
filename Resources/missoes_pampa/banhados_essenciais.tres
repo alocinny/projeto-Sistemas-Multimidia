@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_ucnry")
-description = "adicione pelo menos 2 peças de poças d'água"
+description = "adicione pelo menos 2 rios separados"
 event_type = "banhados_essenciais"
-target_count = 3
+target_count = 2
 metadata/_custom_type_script = "uid://t13aiph8r3xx"

@@ -13,6 +13,7 @@ var trees = {
 		preload("res://Assets/elementos/caatinga/quixabeira-512x512.png")
 	]
 }
+
 var bushes = {
 	Biome.PAMPAS: [
 		preload("res://Assets/elementos/pampas/babosa-512x512.png"),

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_17xcb")
-description = "adicione pelo menos 3 peças de gramíneas nativas"
-event_type = "gramíneas_nativas"
-target_count = 3
+description = "crie pelo menos 2 campos distintos com pelo menos 3 peças"
+event_type = "gramineas_nativas"
+target_count = 2
 metadata/_custom_type_script = "uid://t13aiph8r3xx"
