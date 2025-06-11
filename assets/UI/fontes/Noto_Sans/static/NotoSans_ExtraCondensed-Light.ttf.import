@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://clqowurbw410g"
-path="res://.godot/imported/NotoSans_ExtraCondensed-Light.ttf-b92939b6467f88903ad0b0332e9dbf57.fontdata"
+path="res://.godot/imported/NotoSans_ExtraCondensed-Light.ttf-4b097688d47b32e25ef31f2b2c2963e4.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Noto_Sans/static/NotoSans_ExtraCondensed-Light.ttf"
-dest_files=["res://.godot/imported/NotoSans_ExtraCondensed-Light.ttf-b92939b6467f88903ad0b0332e9dbf57.fontdata"]
+source_file="res://Assets/UI/fontes/Noto_Sans/static/NotoSans_ExtraCondensed-Light.ttf"
+dest_files=["res://.godot/imported/NotoSans_ExtraCondensed-Light.ttf-4b097688d47b32e25ef31f2b2c2963e4.fontdata"]
 
 [params]
 

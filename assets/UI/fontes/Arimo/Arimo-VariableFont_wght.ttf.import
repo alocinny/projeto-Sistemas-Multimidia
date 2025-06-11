@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://qghf7runebhi"
-path="res://.godot/imported/Arimo-VariableFont_wght.ttf-88ef5bd6ad94fc2dfc1fb194af8c497c.fontdata"
+path="res://.godot/imported/Arimo-VariableFont_wght.ttf-89a3221a67028e25bc6f2f59e9eaf9c4.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Arimo/Arimo-VariableFont_wght.ttf"
-dest_files=["res://.godot/imported/Arimo-VariableFont_wght.ttf-88ef5bd6ad94fc2dfc1fb194af8c497c.fontdata"]
+source_file="res://Assets/UI/fontes/Arimo/Arimo-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/Arimo-VariableFont_wght.ttf-89a3221a67028e25bc6f2f59e9eaf9c4.fontdata"]
 
 [params]
 
