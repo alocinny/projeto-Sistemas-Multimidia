@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://dokx6ijaby4qu"]
+
+[ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="1_ykea7"]
+
+[resource]
+script = ExtResource("1_ykea7")
+description = "adicionar pelo menos uma peça de rio"
+event_type = "fontes_de_agua"
+target_count = 3
+metadata/_custom_type_script = "uid://t13aiph8r3xx"

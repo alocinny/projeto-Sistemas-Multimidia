@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://b71l33qdrjmx4"]
+
+[ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="1_5edg5"]
+
+[resource]
+script = ExtResource("1_5edg5")
+description = "Crie um cobertura densa com pelo menos 4 peças de floresta densa conectadas"
+event_type = "cobertura_arborea"
+target_count = 4

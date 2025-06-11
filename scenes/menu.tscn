@@ -1,14 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://b48h0e2epvc"]
+[gd_scene load_steps=10 format=3 uid="uid://b48h0e2epvc"]
 
 [ext_resource type="Script" uid="uid://dckptpfdxpqcp" path="res://scripts/menu.gd" id="1_mae5d"]
 [ext_resource type="Texture2D" uid="uid://nvxfocnphbs" path="res://imagensMenu/environment_forestbackground.png" id="1_ouk20"]
-[ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_mae5d"]
+[ext_resource type="FontFile" uid="uid://bex28l0108g5" path="res://Resources/CodecPro-Regular.ttf" id="3_con2f"]
+[ext_resource type="FontFile" uid="uid://v14i2yxne45l" path="res://Resources/Codec Pro ExtraBold.ttf" id="4_mhnvy"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4hy44"]
 texture = ExtResource("1_ouk20")
 modulate_color = Color(0.493545, 0.493546, 0.493546, 1)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ouk20"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ouk20"]
 bg_color = Color(0.325751, 0.259392, 0.010419, 1)
@@ -29,13 +28,15 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.14)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vsb4k"]
-bg_color = Color(0.590073, 0.477395, 0.0326003, 1)
+bg_color = Color(0.188235, 0.145098, 0.505882, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3.14)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ouk20"]
 
 [node name="menu" type="Control"]
 layout_mode = 3
@@ -77,11 +78,11 @@ theme_override_constants/separation = 20
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.991164, 0.991164, 0.991164, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_con2f")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ouk20")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ouk20")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_mae5d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vsb4k")
@@ -91,9 +92,10 @@ text = "Start"
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_con2f")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ouk20")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ouk20")
@@ -106,9 +108,10 @@ text = "Options
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_con2f")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ouk20")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ouk20")
@@ -122,16 +125,33 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -285.0
-offset_top = -251.0
-offset_right = 295.0
-offset_bottom = -126.0
+offset_left = -367.0
+offset_top = -281.0
+offset_right = 392.0
+offset_bottom = -156.0
 grow_horizontal = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.188235, 0.145098, 0.505882, 1)
 theme_override_constants/shadow_offset_y = 10
-theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_fonts/font = ExtResource("4_mhnvy")
 theme_override_font_sizes/font_size = 113
-text = "Godot Adventure"
+text = "LIVING EARTH"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -381.0
+offset_top = -200.0
+offset_right = 378.0
+offset_bottom = -75.0
+grow_horizontal = 2
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("4_mhnvy")
+theme_override_font_sizes/font_size = 55
+text = "PUZZLE"
 horizontal_alignment = 1
 vertical_alignment = 1
 

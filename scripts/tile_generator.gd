@@ -52,7 +52,7 @@ func choose_edges(biome, edges):
 	
 	match biome:
 		Biome.PAMPAS: 
-			tree_prob = 0.50
+			tree_prob = 0.20
 		Biome.CAATINGA: 
 			tree_prob = 0.10
 			

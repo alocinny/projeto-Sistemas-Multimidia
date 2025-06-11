@@ -1,21 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmlak70i7034e"]
+[gd_scene load_steps=5 format=3 uid="uid://dmlak70i7034e"]
 
 [ext_resource type="Script" uid="uid://sqm8c3mfrhc6" path="res://scripts/h_box_container.gd" id="1_icink"]
-[ext_resource type="Texture2D" uid="uid://bct50fbo2atca" path="res://assets/UI/notcheckbox.png" id="2_icink"]
-[ext_resource type="Texture2D" uid="uid://t343omuwcn6a" path="res://assets/UI/checkbox.png" id="3_iq1wp"]
-[ext_resource type="FontFile" uid="uid://mff1sv3t4rpj" path="res://assets/UI/fontes/Nunito/static/Nunito-SemiBold.ttf" id="4_icink"]
-
-[sub_resource type="Theme" id="Theme_icink"]
+[ext_resource type="Texture2D" uid="uid://bct50fbo2atca" path="res://Assets/UI/notcheckbox.png" id="2_icink"]
+[ext_resource type="Texture2D" uid="uid://t343omuwcn6a" path="res://Assets/UI/checkbox.png" id="3_iq1wp"]
+[ext_resource type="FontFile" uid="uid://mff1sv3t4rpj" path="res://Assets/UI/fontes/Nunito/static/Nunito-SemiBold.ttf" id="4_icink"]
 
 [node name="HBoxContainer" type="HBoxContainer"]
+layout_direction = 4
+offset_right = 941.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/separation = 20
 script = ExtResource("1_icink")
-
-[node name="CheckBox" type="CheckBox" parent="."]
-visible = false
-layout_mode = 2
-theme = SubResource("Theme_icink")
-text = "kkk"
 
 [node name="notCheck" type="TextureRect" parent="."]
 layout_mode = 2
@@ -31,5 +28,6 @@ expand_mode = 2
 [node name="Task" type="Label" parent="."]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_icink")
-theme_override_font_sizes/font_size = 40
-text = "Tarefa 1"
+theme_override_font_sizes/font_size = 30
+text = "Adicione pelo menos 
+uma peça de campo limpo"

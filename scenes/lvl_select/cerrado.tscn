@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkfma1aabju1w"]
+[gd_scene load_steps=10 format=3 uid="uid://dkfma1aabju1w"]
 
 [ext_resource type="Texture2D" uid="uid://cd5ehxfumylk3" path="res://imagensMenu/wallpapersden.com_green-artistic-pixel-art_1440x1440.jpg" id="1_5pnh1"]
+
 [ext_resource type="Script" path="res://scripts/menuCerrado.gd" id="1_ktnwa"]
 [ext_resource type="FontFile" uid="uid://3x5vpe0v4jk4" path="res://imagensMenu/GrapeSoda.ttf" id="2_ktnwa"]
 
@@ -29,7 +30,7 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.14)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asuc0"]
-bg_color = Color(0.0833174, 0.438429, 0.380067, 1)
+bg_color = Color(0.188235, 0.145098, 0.505882, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -89,7 +90,7 @@ offset_right = 209.0
 offset_bottom = 34.5
 grow_vertical = 2
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
@@ -113,16 +114,17 @@ offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.99558, 0.99558, 0.99558, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_ktnwa")
+theme_override_fonts/font = ExtResource("3_2gcxr")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_lv0kf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3oxey")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_iqqmi")
 theme_override_styles/normal = SubResource("StyleBoxFlat_asuc0")
-text = "Jogar"
+text = "JOGAR
+"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -137,9 +139,9 @@ offset_right = 31.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.188235, 0.145098, 0.505882, 1)
 theme_override_constants/shadow_offset_y = 10
-theme_override_fonts/font = ExtResource("2_ktnwa")
+theme_override_fonts/font = ExtResource("4_rae5g")
 theme_override_font_sizes/font_size = 120
 text = "Cerrado"
 

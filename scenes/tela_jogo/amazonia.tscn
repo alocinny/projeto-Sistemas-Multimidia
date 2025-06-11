@@ -1,0 +1,23 @@
+[gd_scene load_steps=10 format=3 uid="uid://dbfvnh5vahv5u"]
+
+[ext_resource type="Script" uid="uid://dts0v7q18tf4i" path="res://scripts/tela_jogo_scripts/amazonia.gd" id="1_0peg4"]
+[ext_resource type="PackedScene" uid="uid://bwdlfrvjkrqns" path="res://scenes/level_missions.tscn" id="1_813fv"]
+[ext_resource type="PackedScene" uid="uid://drqgw1fxmrrhp" path="res://dialog_scenes/level_arara.tscn" id="1_l1xmc"]
+[ext_resource type="Script" uid="uid://t13aiph8r3xx" path="res://scripts/Mission.gd" id="2_l1xmc"]
+[ext_resource type="Resource" uid="uid://b71l33qdrjmx4" path="res://Resources/missoes_amazonia/cobertura_arborea.tres" id="3_0peg4"]
+[ext_resource type="Resource" uid="uid://bdusyxbigtux2" path="res://Resources/missoes_amazonia/palmeiras.tres" id="4_n55xg"]
+[ext_resource type="Resource" uid="uid://bmub8m1lgfly5" path="res://Resources/missoes_amazonia/rede_hidrica.tres" id="5_12bed"]
+[ext_resource type="PackedScene" uid="uid://dqu0j2hrsrtt2" path="res://scenes/progressbar_missoes.tscn" id="6_mdu4q"]
+[ext_resource type="PackedScene" uid="uid://2ubsbgso1mxg" path="res://scenes/core_gameplay/game_main.tscn" id="7_d0sr1"]
+
+[node name="Amazonia" type="Node2D"]
+script = ExtResource("1_0peg4")
+
+[node name="Level_arara" parent="." instance=ExtResource("1_l1xmc")]
+
+[node name="LevelMissions" parent="." instance=ExtResource("1_813fv")]
+missions = Array[ExtResource("2_l1xmc")]([ExtResource("3_0peg4"), ExtResource("4_n55xg"), ExtResource("5_12bed")])
+
+[node name="progressbar_missoes" parent="." instance=ExtResource("6_mdu4q")]
+
+[node name="GameMain" parent="." instance=ExtResource("7_d0sr1")]

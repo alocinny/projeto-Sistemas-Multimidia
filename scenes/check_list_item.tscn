@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccatrkor47te1"]
+
+[ext_resource type="Script" uid="uid://du2t2e4bukby0" path="res://scripts/check_list.gd" id="1_f08j5"]
+
+[node name="CheckList" type="CheckBox"]
+offset_right = 24.0
+offset_bottom = 24.0
+disabled = true
+script = ExtResource("1_f08j5")
