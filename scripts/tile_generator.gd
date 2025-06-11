@@ -6,11 +6,13 @@ const tile = preload("res://scenes/core_gameplay/Tile.tscn")
 var trees = {
 	Biome.PAMPAS: [
 		preload("res://Assets/elementos/pampas/angico-vermelho-512x512.png"),
-
 		],
 	Biome.CAATINGA: [
 		preload("res://Assets/elementos/caatinga/joazeiro-512x512.png"),
 		preload("res://Assets/elementos/caatinga/quixabeira-512x512.png")
+	],
+	Biome.PANTANAL: [
+		preload("res://Assets/elementos/pantanal/cambara.png")
 	]
 }
 
@@ -23,6 +25,9 @@ var bushes = {
 		preload("res://Assets/elementos/caatinga/bromelia-macambira-512x512.png"),
 		preload("res://Assets/elementos/caatinga/jurema-512x512.png"),
 		preload("res://Assets/elementos/caatinga/mandacaru-512x512.png")
+	],
+	Biome.PANTANAL: [
+		preload("res://Assets/elementos/pantanal/acuri.png")
 	]
 }
 
@@ -35,9 +40,11 @@ var rivers = [
 	preload("res://Assets/elementos/pampas/rio-canto-atras-512x512.png")
 ]
 
+var pantano = preload("res://Assets/elementos/pantanal/pantano.png")
+
 func new_tile(biome, pos):
 	var tile = tile.instantiate()
-	var edges = choose_river()
+	var edges = choose_river(biome)
 	var river = choose_river_sprite(edges)
 	edges = choose_edges(biome, edges)
 	
@@ -49,13 +56,7 @@ func new_tile(biome, pos):
 	return tile
 	
 func choose_edges(biome, edges):
-	var tree_prob
-	
-	match biome:
-		Biome.PAMPAS: 
-			tree_prob = 0.20
-		Biome.CAATINGA: 
-			tree_prob = 0.10
+	var tree_prob = 0.20
 			
 	for i in 4:
 		if edges[i] != EdgeType.RIVER and randf() < tree_prob:
@@ -63,9 +64,17 @@ func choose_edges(biome, edges):
 			
 	return edges
 	
-func choose_river():
+func choose_river(biome):
 	var edges
 	var rand = randf()
+	
+	if biome == Biome.PANTANAL:
+		if rand < 0.15:
+			edges = [EdgeType.RIVER, EdgeType.RIVER, EdgeType.RIVER, EdgeType.RIVER]
+		else:
+			edges = [EdgeType.BUSH, EdgeType.BUSH, EdgeType.BUSH, EdgeType.BUSH]
+			
+		return edges
 	
 	if rand < 0.025:
 		edges = [EdgeType.RIVER, EdgeType.BUSH, EdgeType.RIVER, EdgeType.BUSH]
@@ -100,6 +109,8 @@ func choose_river_sprite(edges):
 			river = rivers[2]
 		[EdgeType.RIVER, EdgeType.BUSH, EdgeType.BUSH, EdgeType.RIVER]:
 			river = rivers[3]
+		[EdgeType.RIVER, EdgeType.RIVER, EdgeType.RIVER, EdgeType.RIVER]:
+			river = pantano
 		[EdgeType.BUSH, EdgeType.BUSH, EdgeType.BUSH, EdgeType.BUSH]:
 			river = null
 	

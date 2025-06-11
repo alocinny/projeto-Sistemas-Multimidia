@@ -3,6 +3,7 @@ extends Node2D
 signal tile_placement(river_array, forest_array, field_array)
 
 const EdgeType = preload("res://scripts/enums.gd").EdgeType
+const Biome = preload("res://scripts/enums.gd").Biome
 const TILE_SIZE = GameState.TILE_SIZE
 var tiles = {} #dictionary<Vector2i, Tile>
 var vacant_spots = {} #dictionary<Vector2i, Vector2> coordenadas relativas e globais dos espacos vazios
@@ -46,9 +47,10 @@ func update_vacant():
 				
 				if not tiles.has(neighbor):
 					vacant_spots[neighbor] = grid_to_global_coords(neighbor)
-					
-				if GameState.dragged_tile and !can_place_tile(dir, tiles[pos]):
-					forbidden_spots[neighbor] = grid_to_global_coords(neighbor)
+				
+				if get_parent().level_biome != Biome.PANTANAL:	
+					if GameState.dragged_tile and !can_place_tile(dir, tiles[pos]):
+						forbidden_spots[neighbor] = grid_to_global_coords(neighbor)
 	else:
 		vacant_spots[Vector2i(0, 0)] = Vector2(0, 0)
 	

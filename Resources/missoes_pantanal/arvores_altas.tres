@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_1cgll")
-description = "Garanta 3 peças com arvores altas próximos aos pântanos"
+description = "Garanta 3 peças com arvores altas"
 event_type = "arvores_altas"
 target_count = 3

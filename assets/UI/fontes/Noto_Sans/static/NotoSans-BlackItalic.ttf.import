@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://d4hpp2d8vrd5t"
-path="res://.godot/imported/NotoSans-BlackItalic.ttf-7b725e53cde0d08bd3af9591d2cd9aac.fontdata"
+path="res://.godot/imported/NotoSans-BlackItalic.ttf-ea15891e7a44cbd8ff11fdaf5689d38e.fontdata"
 
 [deps]
 
-source_file="res://assets/UI/fontes/Noto_Sans/static/NotoSans-BlackItalic.ttf"
-dest_files=["res://.godot/imported/NotoSans-BlackItalic.ttf-7b725e53cde0d08bd3af9591d2cd9aac.fontdata"]
+source_file="res://Assets/UI/fontes/Noto_Sans/static/NotoSans-BlackItalic.ttf"
+dest_files=["res://.godot/imported/NotoSans-BlackItalic.ttf-ea15891e7a44cbd8ff11fdaf5689d38e.fontdata"]
 
 [params]
 

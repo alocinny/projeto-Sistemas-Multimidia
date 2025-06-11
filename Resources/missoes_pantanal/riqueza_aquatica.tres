@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_g5h07")
-description = "Conecte 5 peças de rio"
+description = "Conecte 3 peças de pântano"
 event_type = "riqueza_aquatica"
-target_count = 5
+target_count = 3

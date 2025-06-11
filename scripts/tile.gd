@@ -17,8 +17,8 @@ var mouse_offset = Vector2.ZERO
 
 func initialize_tile(biome, trees, bushes, given_edges, river):
 	var tree_prob
-	var tree_density
-	var bush_density
+	var tree_density = 1
+	var bush_density = 1
 	
 	if river:
 		place_river(river)
